@@ -1,0 +1,8 @@
+prefix=/home/sausy/Projects/Hand_openBionic/software/catkin/devel
+
+Name: m3_rqt
+Description: Description of m3_rqt
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sausy/Projects/Hand_openBionic/software/catkin/devel/lib 
+Requires: 

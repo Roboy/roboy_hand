@@ -1,0 +1,8 @@
+prefix=/home/sausy/Projects/Hand_openBionic/software/catkin/devel
+
+Name: roboy_rqt_plugins_documentation
+Description: Description of roboy_rqt_plugins_documentation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sausy/Projects/Hand_openBionic/software/catkin/devel/lib 
+Requires: 

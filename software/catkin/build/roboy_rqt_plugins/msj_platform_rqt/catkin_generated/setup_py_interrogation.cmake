@@ -1,0 +1,6 @@
+set(msj_platform_rqt_SETUP_PY_VERSION "0.0.0")
+set(msj_platform_rqt_SETUP_PY_SCRIPTS "")
+set(msj_platform_rqt_SETUP_PY_PACKAGES "msj_platform_rqt")
+set(msj_platform_rqt_SETUP_PY_PACKAGE_DIRS "../msj_platform_rqt")
+set(msj_platform_rqt_SETUP_PY_MODULES "")
+set(msj_platform_rqt_SETUP_PY_MODULE_DIRS "")

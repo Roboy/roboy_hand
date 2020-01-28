@@ -1,0 +1,10 @@
+-I/usr/include/eigen3
+-I/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/msj_platform_rqt/include
+-I/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/msj_platform_rqt/qcustomplot
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="msj_platform_rqt"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/sausy/Projects/Hand_openBionic/software/catkin/build/roboy_rqt_plugins/msj_platform_rqt/include/msj_platform_rqt/moc_msj_platform.cpp
+/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/msj_platform_rqt/include/msj_platform_rqt/msj_platform.hpp

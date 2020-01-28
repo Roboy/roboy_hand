@@ -1,0 +1,6 @@
+set(vr_puppets_SETUP_PY_VERSION "0.0.0")
+set(vr_puppets_SETUP_PY_SCRIPTS "")
+set(vr_puppets_SETUP_PY_PACKAGES "vr_puppets")
+set(vr_puppets_SETUP_PY_PACKAGE_DIRS "../vr_puppets")
+set(vr_puppets_SETUP_PY_MODULES "")
+set(vr_puppets_SETUP_PY_MODULE_DIRS "")

@@ -1,0 +1,8 @@
+-I/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/roboy_trajectories_control/include
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="roboy_trajectories_control"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/sausy/Projects/Hand_openBionic/software/catkin/build/roboy_rqt_plugins/roboy_trajectories_control/include/roboy_trajectories_control/moc_roboy_trajectories_control.cpp
+/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/roboy_trajectories_control/include/roboy_trajectories_control/roboy_trajectories_control.hpp

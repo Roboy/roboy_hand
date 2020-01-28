@@ -1,0 +1,5 @@
+finger[0].attach(10, 11, A1, A9, false); // attach the thumb
+finger[3].attach(4, 3, A0, 1, false); // attach the ring & pinky (fingers are inverted)
+finger[1].attach(9, 6, A3, 0, false); // attach the index (finger is inverted)
+finger[2].attach(5, 12, A2, A5, false); //doesn't move (could be wronge pin
+

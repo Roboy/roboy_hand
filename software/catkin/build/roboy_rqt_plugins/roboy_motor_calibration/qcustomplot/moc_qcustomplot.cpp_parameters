@@ -1,0 +1,9 @@
+-I/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/roboy_motor_calibration/include
+-I/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/roboy_motor_calibration/qcustomplot
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="roboy_motor_calibration"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/sausy/Projects/Hand_openBionic/software/catkin/build/roboy_rqt_plugins/roboy_motor_calibration/qcustomplot/moc_qcustomplot.cpp
+/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/roboy_motor_calibration/qcustomplot/qcustomplot.h

@@ -1,0 +1,6 @@
+set(shoulder_testbed_rqt_SETUP_PY_VERSION "0.0.0")
+set(shoulder_testbed_rqt_SETUP_PY_SCRIPTS "")
+set(shoulder_testbed_rqt_SETUP_PY_PACKAGES "shoulder_testbed")
+set(shoulder_testbed_rqt_SETUP_PY_PACKAGE_DIRS "../shoulder_testbed")
+set(shoulder_testbed_rqt_SETUP_PY_MODULES "")
+set(shoulder_testbed_rqt_SETUP_PY_MODULE_DIRS "")

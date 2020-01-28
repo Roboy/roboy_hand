@@ -1,0 +1,8 @@
+prefix=/home/sausy/Projects/Hand_openBionic/software/catkin/install
+
+Name: roboy_trajectories_control
+Description: Description of roboy_trajectories_control
+Version: 0.0.0
+Cflags: -I/home/sausy/Projects/Hand_openBionic/software/catkin/install/include
+Libs: -L/home/sausy/Projects/Hand_openBionic/software/catkin/install/lib -lroboy_trajectories_control
+Requires: roscpp rqt_gui_cpp std_msgs roboy_middleware_msgs roboy_control_msgs common_utilities

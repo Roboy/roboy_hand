@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/roboy_arms/src/udptest.cpp
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+netdb.h
+-
+sys/socket.h
+-
+sys/types.h
+-
+arpa/inet.h
+-
+

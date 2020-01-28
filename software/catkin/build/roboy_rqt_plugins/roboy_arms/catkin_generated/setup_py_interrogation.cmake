@@ -1,0 +1,6 @@
+set(roboy_arms_SETUP_PY_VERSION "0.0.0")
+set(roboy_arms_SETUP_PY_SCRIPTS "")
+set(roboy_arms_SETUP_PY_PACKAGES "roboy_arms")
+set(roboy_arms_SETUP_PY_PACKAGE_DIRS "../roboy_arms")
+set(roboy_arms_SETUP_PY_MODULES "")
+set(roboy_arms_SETUP_PY_MODULE_DIRS "")

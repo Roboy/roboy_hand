@@ -1,0 +1,8 @@
+prefix=/home/sausy/Projects/Hand_openBionic/software/catkin/devel
+
+Name: vr_puppets
+Description: Description of vr_puppets
+Version: 0.0.0
+Cflags: -I/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/vr_puppets/include
+Libs: -L/home/sausy/Projects/Hand_openBionic/software/catkin/devel/lib -lvr_puppets
+Requires: roscpp rqt_gui_cpp std_msgs roboy_middleware_msgs

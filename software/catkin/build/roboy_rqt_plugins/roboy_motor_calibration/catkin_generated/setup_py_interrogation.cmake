@@ -1,0 +1,6 @@
+set(roboy_motor_calibration_SETUP_PY_VERSION "0.0.0")
+set(roboy_motor_calibration_SETUP_PY_SCRIPTS "")
+set(roboy_motor_calibration_SETUP_PY_PACKAGES "roboy_motor_calibration")
+set(roboy_motor_calibration_SETUP_PY_PACKAGE_DIRS "../roboy_motor_calibration")
+set(roboy_motor_calibration_SETUP_PY_MODULES "")
+set(roboy_motor_calibration_SETUP_PY_MODULE_DIRS "")

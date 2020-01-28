@@ -1,0 +1,8 @@
+prefix=/home/sausy/Projects/Hand_openBionic/software/catkin/install
+
+Name: msj_platform_rqt
+Description: Description of msj_platform_rqt
+Version: 0.0.0
+Cflags: -I/home/sausy/Projects/Hand_openBionic/software/catkin/install/include
+Libs: -L/home/sausy/Projects/Hand_openBionic/software/catkin/install/lib -lmsj_platform_rqt
+Requires: roscpp rqt_gui_cpp std_msgs roboy_middleware_msgs

@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -O0 -g  -rdynamic CMakeFiles/udptest.dir/src/udptest.cpp.o  -o /home/sausy/Projects/Hand_openBionic/software/catkin/devel/lib/roboy_arms/udptest 

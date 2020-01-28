@@ -1,0 +1,9 @@
+-I/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/roboy_motor_command/include
+-I/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/roboy_motor_command/qcustomplot
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="roboy_motor_command"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/sausy/Projects/Hand_openBionic/software/catkin/build/roboy_rqt_plugins/roboy_motor_command/include/roboy_motor_command/moc_roboy_motor_command.cpp
+/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/roboy_motor_command/include/roboy_motor_command/roboy_motor_command.hpp

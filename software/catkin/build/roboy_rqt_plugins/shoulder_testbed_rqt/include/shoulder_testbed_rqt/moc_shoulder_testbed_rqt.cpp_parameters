@@ -1,0 +1,9 @@
+-I/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/shoulder_testbed_rqt/include
+-I/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/shoulder_testbed_rqt/qcustomplot
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="shoulder_testbed_rqt"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/sausy/Projects/Hand_openBionic/software/catkin/build/roboy_rqt_plugins/shoulder_testbed_rqt/include/shoulder_testbed_rqt/moc_shoulder_testbed_rqt.cpp
+/home/sausy/Projects/Hand_openBionic/software/catkin/src/roboy_rqt_plugins/shoulder_testbed_rqt/include/shoulder_testbed_rqt/shoulder_testbed_rqt.hpp

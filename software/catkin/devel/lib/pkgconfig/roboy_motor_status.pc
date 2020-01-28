@@ -1,0 +1,8 @@
+prefix=/home/sausy/Projects/Hand_openBionic/software/catkin/devel
+
+Name: roboy_motor_status
+Description: Description of roboy_motor_status
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sausy/Projects/Hand_openBionic/software/catkin/devel/lib 
+Requires: roboy_middleware_msgs
