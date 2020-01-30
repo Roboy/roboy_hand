@@ -1,2 +1,2 @@
 common_utilities:roboy_communication/roboy_cognition_msgs:roboy_communication/roboy_control_msgs:roboy_communication/roboy_middleware_msgs:roboy_communication/roboy_simulation_msgs:roboy_control_center:roboy_plexus
--DCATKIN_DEVEL_PREFIX=/home/sausy/Projects/Hand_openBionic/catkin/devel -DCMAKE_INSTALL_PREFIX=/home/sausy/Projects/Hand_openBionic/catkin/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/sausy/Projects/roboy_hand/catkin/devel -DCMAKE_INSTALL_PREFIX=/home/sausy/Projects/roboy_hand/catkin/install -G Unix Makefiles

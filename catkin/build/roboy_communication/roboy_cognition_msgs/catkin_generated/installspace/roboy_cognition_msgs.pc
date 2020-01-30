@@ -1,8 +1,8 @@
-prefix=/home/sausy/Projects/Hand_openBionic/catkin/install
+prefix=/home/sausy/Projects/roboy_hand/catkin/install
 
 Name: roboy_cognition_msgs
 Description: Description of roboy_cognition_msgs
 Version: 3.0.2
-Cflags: -I/home/sausy/Projects/Hand_openBionic/catkin/install/include
-Libs: -L/home/sausy/Projects/Hand_openBionic/catkin/install/lib 
+Cflags: -I/home/sausy/Projects/roboy_hand/catkin/install/include
+Libs: -L/home/sausy/Projects/roboy_hand/catkin/install/lib 
 Requires: message_runtime std_msgs geometry_msgs

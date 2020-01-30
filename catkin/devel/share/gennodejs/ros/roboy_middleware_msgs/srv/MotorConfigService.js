@@ -74,7 +74,7 @@ class MotorConfigServiceRequest {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '02855ca08dfa32d21a88932308604231';
+    return 'f6bdf0b650eb8496ce1da8c8ada4d281';
   }
 
   static messageDefinition() {
@@ -95,7 +95,6 @@ class MotorConfigServiceRequest {
     int32[] Kd
     int32[] deadband
     int32[] setpoint
-    int32[] gearBoxRatio
     `;
   }
 
@@ -200,6 +199,6 @@ class MotorConfigServiceResponse {
 module.exports = {
   Request: MotorConfigServiceRequest,
   Response: MotorConfigServiceResponse,
-  md5sum() { return '8df6eb3cbde11d4d87f65fb1d6cc6683'; },
+  md5sum() { return 'f3e5954366fdfb6276cebb1b78c6e830'; },
   datatype() { return 'roboy_middleware_msgs/MotorConfigService'; }
 };

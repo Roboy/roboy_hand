@@ -77,7 +77,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg'], 'roboy_middleware_msgs': ['/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_communication/roboy_middleware_msgs/msg'], 'geometry_msgs': ['/opt/ros/melodic/share/geometry_msgs/cmake/../msg']}
+// {'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg'], 'roboy_middleware_msgs': ['/home/sausy/Projects/roboy_hand/catkin/src/roboy_communication/roboy_middleware_msgs/msg'], 'geometry_msgs': ['/opt/ros/melodic/share/geometry_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -120,12 +120,12 @@ struct MD5Sum< ::roboy_middleware_msgs::MotorConfigServiceRequest_<ContainerAllo
 {
   static const char* value()
   {
-    return "02855ca08dfa32d21a88932308604231";
+    return "f6bdf0b650eb8496ce1da8c8ada4d281";
   }
 
   static const char* value(const ::roboy_middleware_msgs::MotorConfigServiceRequest_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x02855ca08dfa32d2ULL;
-  static const uint64_t static_value2 = 0x1a88932308604231ULL;
+  static const uint64_t static_value1 = 0xf6bdf0b650eb8496ULL;
+  static const uint64_t static_value2 = 0xce1da8c8ada4d281ULL;
 };
 
 template<class ContainerAllocator>
@@ -159,7 +159,6 @@ struct Definition< ::roboy_middleware_msgs::MotorConfigServiceRequest_<Container
 "int32[] Kd\n"
 "int32[] deadband\n"
 "int32[] setpoint\n"
-"int32[] gearBoxRatio\n"
 ;
   }
 

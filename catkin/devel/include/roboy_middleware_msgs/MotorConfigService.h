@@ -40,7 +40,7 @@ template<>
 struct MD5Sum< ::roboy_middleware_msgs::MotorConfigService > {
   static const char* value()
   {
-    return "8df6eb3cbde11d4d87f65fb1d6cc6683";
+    return "f3e5954366fdfb6276cebb1b78c6e830";
   }
 
   static const char* value(const ::roboy_middleware_msgs::MotorConfigService&) { return value(); }

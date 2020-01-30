@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include/common_utilities/UDPSocket.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include/common_utilities/UDPSocket.hpp
 stdlib.h
 -
 unistd.h
@@ -60,11 +60,11 @@ vector
 ros/ros.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/UDPSocket.cpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/UDPSocket.cpp
 ifaddrs.h
 -
 common_utilities/UDPSocket.hpp
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/common_utilities/UDPSocket.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/common_utilities/UDPSocket.hpp
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

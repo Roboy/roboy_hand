@@ -8,7 +8,7 @@ import struct
 import roboy_middleware_msgs.msg
 
 class MotorConfigServiceRequest(genpy.Message):
-  _md5sum = "02855ca08dfa32d21a88932308604231"
+  _md5sum = "f6bdf0b650eb8496ce1da8c8ada4d281"
   _type = "roboy_middleware_msgs/MotorConfigServiceRequest"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """bool legacy
@@ -25,8 +25,7 @@ int32[] Kp
 int32[] Ki
 int32[] Kd
 int32[] deadband
-int32[] setpoint
-int32[] gearBoxRatio"""
+int32[] setpoint"""
   __slots__ = ['legacy','config']
   _slot_types = ['bool','roboy_middleware_msgs/MotorConfig']
 
@@ -114,10 +113,6 @@ int32[] gearBoxRatio"""
       buff.write(_struct_I.pack(length))
       pattern = '<%si'%length
       buff.write(struct.pack(pattern, *self.config.setpoint))
-      length = len(self.config.gearBoxRatio)
-      buff.write(_struct_I.pack(length))
-      pattern = '<%si'%length
-      buff.write(struct.pack(pattern, *self.config.gearBoxRatio))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -202,13 +197,6 @@ int32[] gearBoxRatio"""
       start = end
       end += struct.calcsize(pattern)
       self.config.setpoint = struct.unpack(pattern, str[start:end])
-      start = end
-      end += 4
-      (length,) = _struct_I.unpack(str[start:end])
-      pattern = '<%si'%length
-      start = end
-      end += struct.calcsize(pattern)
-      self.config.gearBoxRatio = struct.unpack(pattern, str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -268,10 +256,6 @@ int32[] gearBoxRatio"""
       buff.write(_struct_I.pack(length))
       pattern = '<%si'%length
       buff.write(self.config.setpoint.tostring())
-      length = len(self.config.gearBoxRatio)
-      buff.write(_struct_I.pack(length))
-      pattern = '<%si'%length
-      buff.write(self.config.gearBoxRatio.tostring())
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -357,13 +341,6 @@ int32[] gearBoxRatio"""
       start = end
       end += struct.calcsize(pattern)
       self.config.setpoint = numpy.frombuffer(str[start:end], dtype=numpy.int32, count=length)
-      start = end
-      end += 4
-      (length,) = _struct_I.unpack(str[start:end])
-      pattern = '<%si'%length
-      start = end
-      end += struct.calcsize(pattern)
-      self.config.gearBoxRatio = numpy.frombuffer(str[start:end], dtype=numpy.int32, count=length)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -495,6 +472,6 @@ def _get_struct_I():
     return _struct_I
 class MotorConfigService(object):
   _type          = 'roboy_middleware_msgs/MotorConfigService'
-  _md5sum = '8df6eb3cbde11d4d87f65fb1d6cc6683'
+  _md5sum = 'f3e5954366fdfb6276cebb1b78c6e830'
   _request_class  = MotorConfigServiceRequest
   _response_class = MotorConfigServiceResponse

@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -g -g -fPIC
 
 CXX_DEFINES = -DMotorConfig_EXPORTS -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"common_utilities\"
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include -I/home/sausy/Projects/Hand_openBionic/catkin/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include 
+CXX_INCLUDES = -I/usr/include/eigen3 -I/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include -I/home/sausy/Projects/roboy_hand/catkin/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include 
 

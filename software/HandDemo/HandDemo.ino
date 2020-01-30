@@ -85,17 +85,25 @@ void loop()
   //LED.setColour(255,0,0);
   pixel.setPixelColor(0, pixel.Color(255, 0, 255));
   pixel.show();
+
+   for (int i = 0; i < NUM_FINGERS; i++){
+      SerialUSB.print("F");
+      SerialUSB.print(i);
+      SerialUSB.print(" ");
+      SerialUSB.print(finger[i].readPos());
+      SerialUSB.print("\n");
+   }
   
   pollSerial();
   
   delay(100);
 
-  closeHand();
+  //closeHand();
 
   pixel.setPixelColor(0, pixel.Color(255, 0, 0));
   pixel.show();
   delay(100);
-  openHand();
+  //openHand();
 
   /*
   while (Serial.available()) {

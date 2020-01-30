@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include/common_utilities/UDPSocket.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include/common_utilities/UDPSocket.hpp
 stdlib.h
 -
 unistd.h
@@ -60,9 +60,9 @@ vector
 ros/ros.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/rfid_unlocker.cpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/rfid_unlocker.cpp
 common_utilities/UDPSocket.hpp
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/common_utilities/UDPSocket.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/common_utilities/UDPSocket.hpp
 chrono
 -
 

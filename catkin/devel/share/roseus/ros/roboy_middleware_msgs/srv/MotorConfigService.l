@@ -119,7 +119,7 @@
   :super ros::object
   :slots ())
 
-(setf (get roboy_middleware_msgs::MotorConfigService :md5sum-) "8df6eb3cbde11d4d87f65fb1d6cc6683")
+(setf (get roboy_middleware_msgs::MotorConfigService :md5sum-) "f3e5954366fdfb6276cebb1b78c6e830")
 (setf (get roboy_middleware_msgs::MotorConfigService :datatype-) "roboy_middleware_msgs/MotorConfigService")
 (setf (get roboy_middleware_msgs::MotorConfigService :request) roboy_middleware_msgs::MotorConfigServiceRequest)
 (setf (get roboy_middleware_msgs::MotorConfigService :response) roboy_middleware_msgs::MotorConfigServiceResponse)
@@ -127,7 +127,7 @@
 (defmethod roboy_middleware_msgs::MotorConfigServiceRequest
   (:response () (instance roboy_middleware_msgs::MotorConfigServiceResponse :init)))
 
-(setf (get roboy_middleware_msgs::MotorConfigServiceRequest :md5sum-) "8df6eb3cbde11d4d87f65fb1d6cc6683")
+(setf (get roboy_middleware_msgs::MotorConfigServiceRequest :md5sum-) "f3e5954366fdfb6276cebb1b78c6e830")
 (setf (get roboy_middleware_msgs::MotorConfigServiceRequest :datatype-) "roboy_middleware_msgs/MotorConfigServiceRequest")
 (setf (get roboy_middleware_msgs::MotorConfigServiceRequest :definition-)
       "bool legacy
@@ -144,13 +144,12 @@ int32[] Kp
 int32[] Ki
 int32[] Kd
 int32[] deadband
-int32[] setpoint
 ---
 int32[] mode
 
 ")
 
-(setf (get roboy_middleware_msgs::MotorConfigServiceResponse :md5sum-) "8df6eb3cbde11d4d87f65fb1d6cc6683")
+(setf (get roboy_middleware_msgs::MotorConfigServiceResponse :md5sum-) "f3e5954366fdfb6276cebb1b78c6e830")
 (setf (get roboy_middleware_msgs::MotorConfigServiceResponse :datatype-) "roboy_middleware_msgs/MotorConfigServiceResponse")
 (setf (get roboy_middleware_msgs::MotorConfigServiceResponse :definition-)
       "bool legacy
@@ -167,7 +166,6 @@ int32[] Kp
 int32[] Ki
 int32[] Kd
 int32[] deadband
-int32[] setpoint
 ---
 int32[] mode
 
@@ -175,6 +173,6 @@ int32[] mode
 
 
 
-(provide :roboy_middleware_msgs/MotorConfigService "8df6eb3cbde11d4d87f65fb1d6cc6683")
+(provide :roboy_middleware_msgs/MotorConfigService "f3e5954366fdfb6276cebb1b78c6e830")
 
 

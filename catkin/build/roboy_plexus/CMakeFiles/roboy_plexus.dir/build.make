@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sausy/Projects/Hand_openBionic/catkin/src
+CMAKE_SOURCE_DIR = /home/sausy/Projects/roboy_hand/catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sausy/Projects/Hand_openBionic/catkin/build
+CMAKE_BINARY_DIR = /home/sausy/Projects/roboy_hand/catkin/build
 
 # Include any dependencies generated for this target.
 include roboy_plexus/CMakeFiles/roboy_plexus.dir/depend.make
@@ -58,186 +58,160 @@ include roboy_plexus/CMakeFiles/roboy_plexus.dir/progress.make
 include roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/main.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/main.cpp
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/main.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/main.cpp
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/src/main.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/main.cpp > CMakeFiles/roboy_plexus.dir/src/main.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/main.cpp > CMakeFiles/roboy_plexus.dir/src/main.cpp.i
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/src/main.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/main.cpp -o CMakeFiles/roboy_plexus.dir/src/main.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/main.cpp -o CMakeFiles/roboy_plexus.dir/src/main.cpp.s
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/icebusControl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/icebusControl.cpp
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/icebusControl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/icebusControl.cpp
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/icebusControl.cpp > CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/icebusControl.cpp > CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.i
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/icebusControl.cpp -o CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/icebusControl.cpp -o CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.s
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/myoControl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/myoControl.cpp
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/myoControl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/myoControl.cpp
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/myoControl.cpp > CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/myoControl.cpp > CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.i
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/myoControl.cpp -o CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/myoControl.cpp -o CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.s
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/motorControl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/motorControl.cpp
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/motorControl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/motorControl.cpp
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/motorControl.cpp > CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/motorControl.cpp > CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.i
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/motorControl.cpp -o CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/motorControl.cpp -o CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.s
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/i2c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/i2c.cpp
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/i2c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/i2c.cpp
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/i2c.cpp > CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/i2c.cpp > CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.i
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/i2c.cpp -o CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.s
-
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/altera_up_avalon_rs232.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-gcc-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.o   -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/altera_up_avalon_rs232.c
-
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-gcc-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/altera_up_avalon_rs232.c > CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.i
-
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-gcc-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/interfaces/altera_up_avalon_rs232.c -o CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/i2c.cpp -o CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.s
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/roboyPlexus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/roboyPlexus.cpp
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/roboyPlexus.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/roboyPlexus.cpp
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/roboyPlexus.cpp > CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/roboyPlexus.cpp > CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.i
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/roboyPlexus.cpp -o CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/roboyPlexus.cpp -o CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.s
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/sensors/A1335.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/sensors/A1335.cpp
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/sensors/A1335.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/sensors/A1335.cpp
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/sensors/A1335.cpp > CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/sensors/A1335.cpp > CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.i
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/sensors/A1335.cpp -o CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/sensors/A1335.cpp -o CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.s
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/control/controlActions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/control/controlActions.cpp
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/control/controlActions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/control/controlActions.cpp
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/control/controlActions.cpp > CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/control/controlActions.cpp > CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.i
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/control/controlActions.cpp -o CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/control/controlActions.cpp -o CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.s
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/sensors/tle493d_w2b6.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/sensors/tle493d_w2b6.cpp
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/sensors/tle493d_w2b6.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/sensors/tle493d_w2b6.cpp
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/sensors/tle493d_w2b6.cpp > CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/sensors/tle493d_w2b6.cpp > CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.i
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/sensors/tle493d_w2b6.cpp -o CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/sensors/tle493d_w2b6.cpp -o CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.s
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/utility/UDPSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/utility/UDPSocket.cpp
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/utility/UDPSocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/utility/UDPSocket.cpp
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/utility/UDPSocket.cpp > CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/utility/UDPSocket.cpp > CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.i
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/utility/UDPSocket.cpp -o CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/utility/UDPSocket.cpp -o CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.s
+
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/hand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/hand.cpp
+
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.i"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/hand.cpp > CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.i
+
+roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.s"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/interfaces/hand.cpp -o CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.s
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/MotorConfig.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/MotorConfig.cpp
+roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/MotorConfig.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/MotorConfig.cpp
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/MotorConfig.cpp > CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/MotorConfig.cpp > CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.i
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/MotorConfig.cpp -o CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.s
-
-roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc/eds/src/alt_find_dev.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-gcc-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.o   -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc/eds/src/alt_find_dev.c
-
-roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-gcc-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc/eds/src/alt_find_dev.c > CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.i
-
-roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-gcc-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc/eds/src/alt_find_dev.c -o CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.s
-
-roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.o: roboy_plexus/CMakeFiles/roboy_plexus.dir/flags.make
-roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc/eds/src/alt_open.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-gcc-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.o   -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc/eds/src/alt_open.c
-
-roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-gcc-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc/eds/src/alt_open.c > CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.i
-
-roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-gcc-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc/eds/src/alt_open.c -o CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && /usr/bin/arm-linux-gnueabihf-g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/MotorConfig.cpp -o CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.s
 
 # Object files for target roboy_plexus
 roboy_plexus_OBJECTS = \
@@ -246,72 +220,68 @@ roboy_plexus_OBJECTS = \
 "CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o" \
 "CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o" \
 "CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o" \
-"CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.o" \
 "CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o" \
 "CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o" \
 "CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o" \
 "CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o" \
 "CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o" \
-"CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o" \
-"CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.o" \
-"CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.o"
+"CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.o" \
+"CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o"
 
 # External object files for target roboy_plexus
 roboy_plexus_EXTERNAL_OBJECTS =
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/librosconsole.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libconsole_bridge.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/libroslz4.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/libroscpp.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/librostime.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/libactionlib.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/libroboy_soli.a
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/libyaml-cpp.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libboost_system.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libboost_thread.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/liblog4cxx.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libboost_regex.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libapr-1.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libaprutil-1.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/lib/arm-linux-gnueabihf/libuuid.so.1.3.0
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicuio.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicudata.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicule.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicutu.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicuuc.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicui18n.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/lib/arm-linux-gnueabihf/libdl.so.2
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libtinyxml.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable /home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/roboy_plexus.dir/link.txt --verbose=$(VERBOSE)
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/librosconsole.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libconsole_bridge.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/libroslz4.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/libroscpp.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/librostime.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/libactionlib.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/opt/ros/kinetic/lib/libroboy_soli.a
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/libyaml-cpp.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libboost_system.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libboost_thread.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/liblog4cxx.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libboost_regex.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libapr-1.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libaprutil-1.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/lib/arm-linux-gnueabihf/libuuid.so.1.3.0
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicuio.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicudata.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicule.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicutu.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicuuc.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libicui18n.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/lib/arm-linux-gnueabihf/libdl.so.2
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/lib/arm-linux-gnueabihf/libtinyxml.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable /home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/roboy_plexus.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-roboy_plexus/CMakeFiles/roboy_plexus.dir/build: /home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/roboy_plexus
+roboy_plexus/CMakeFiles/roboy_plexus.dir/build: /home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/roboy_plexus
 
 .PHONY : roboy_plexus/CMakeFiles/roboy_plexus.dir/build
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/clean:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && $(CMAKE_COMMAND) -P CMakeFiles/roboy_plexus.dir/cmake_clean.cmake
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && $(CMAKE_COMMAND) -P CMakeFiles/roboy_plexus.dir/cmake_clean.cmake
 .PHONY : roboy_plexus/CMakeFiles/roboy_plexus.dir/clean
 
 roboy_plexus/CMakeFiles/roboy_plexus.dir/depend:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sausy/Projects/Hand_openBionic/catkin/src /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus /home/sausy/Projects/Hand_openBionic/catkin/build /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus/CMakeFiles/roboy_plexus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sausy/Projects/roboy_hand/catkin/src /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus /home/sausy/Projects/roboy_hand/catkin/build /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus/CMakeFiles/roboy_plexus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : roboy_plexus/CMakeFiles/roboy_plexus.dir/depend
 

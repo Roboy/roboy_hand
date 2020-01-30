@@ -28,7 +28,6 @@ class MotorConfig {
       this.Kd = null;
       this.deadband = null;
       this.setpoint = null;
-      this.gearBoxRatio = null;
     }
     else {
       if (initObj.hasOwnProperty('update_frequency')) {
@@ -91,12 +90,6 @@ class MotorConfig {
       else {
         this.setpoint = [];
       }
-      if (initObj.hasOwnProperty('gearBoxRatio')) {
-        this.gearBoxRatio = initObj.gearBoxRatio
-      }
-      else {
-        this.gearBoxRatio = [];
-      }
     }
   }
 
@@ -122,8 +115,6 @@ class MotorConfig {
     bufferOffset = _arraySerializer.int32(obj.deadband, buffer, bufferOffset, null);
     // Serialize message field [setpoint]
     bufferOffset = _arraySerializer.int32(obj.setpoint, buffer, bufferOffset, null);
-    // Serialize message field [gearBoxRatio]
-    bufferOffset = _arraySerializer.int32(obj.gearBoxRatio, buffer, bufferOffset, null);
     return bufferOffset;
   }
 
@@ -151,8 +142,6 @@ class MotorConfig {
     data.deadband = _arrayDeserializer.int32(buffer, bufferOffset, null)
     // Deserialize message field [setpoint]
     data.setpoint = _arrayDeserializer.int32(buffer, bufferOffset, null)
-    // Deserialize message field [gearBoxRatio]
-    data.gearBoxRatio = _arrayDeserializer.int32(buffer, bufferOffset, null)
     return data;
   }
 
@@ -168,8 +157,7 @@ class MotorConfig {
     length += 4 * object.Kd.length;
     length += 4 * object.deadband.length;
     length += 4 * object.setpoint.length;
-    length += 4 * object.gearBoxRatio.length;
-    return length + 44;
+    return length + 40;
   }
 
   static datatype() {
@@ -179,7 +167,7 @@ class MotorConfig {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'e8035a85d6754846f143f80bcf9f5f79';
+    return 'dea90ac772f67b4803331b153304163f';
   }
 
   static messageDefinition() {
@@ -195,7 +183,6 @@ class MotorConfig {
     int32[] Kd
     int32[] deadband
     int32[] setpoint
-    int32[] gearBoxRatio
     `;
   }
 
@@ -273,13 +260,6 @@ class MotorConfig {
     }
     else {
       resolved.setpoint = []
-    }
-
-    if (msg.gearBoxRatio !== undefined) {
-      resolved.gearBoxRatio = msg.gearBoxRatio;
-    }
-    else {
-      resolved.gearBoxRatio = []
     }
 
     return resolved;

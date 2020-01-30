@@ -14,7 +14,7 @@
 
 (defclass roboy_middleware_msgs::MotorInfo
   :super ros::object
-  :slots (_setpoint _control_mode _Kp _Ki _Kd _deadband _IntegralLimit _PWMLimit _pwm _communication_quality _error_code _gearBoxRatio ))
+  :slots (_setpoint _control_mode _Kp _Ki _Kd _deadband _IntegralLimit _PWMLimit _pwm _communication_quality _error_code _neopixelColor ))
 
 (defmethod roboy_middleware_msgs::MotorInfo
   (:init
@@ -30,7 +30,7 @@
     ((:pwm __pwm) (make-array 0 :initial-element 0 :element-type :integer))
     ((:communication_quality __communication_quality) (make-array 0 :initial-element 0 :element-type :integer))
     ((:error_code __error_code) (make-array 0 :initial-element 0 :element-type :integer))
-    ((:gearBoxRatio __gearBoxRatio) (make-array 0 :initial-element 0 :element-type :integer))
+    ((:neopixelColor __neopixelColor) (make-array 0 :initial-element 0 :element-type :integer))
     )
    (send-super :init)
    (setq _setpoint __setpoint)
@@ -44,7 +44,7 @@
    (setq _pwm __pwm)
    (setq _communication_quality __communication_quality)
    (setq _error_code __error_code)
-   (setq _gearBoxRatio __gearBoxRatio)
+   (setq _neopixelColor __neopixelColor)
    self)
   (:setpoint
    (&optional __setpoint)
@@ -79,9 +79,9 @@
   (:error_code
    (&optional __error_code)
    (if __error_code (setq _error_code __error_code)) _error_code)
-  (:gearBoxRatio
-   (&optional __gearBoxRatio)
-   (if __gearBoxRatio (setq _gearBoxRatio __gearBoxRatio)) _gearBoxRatio)
+  (:neopixelColor
+   (&optional __neopixelColor)
+   (if __neopixelColor (setq _neopixelColor __neopixelColor)) _neopixelColor)
   (:serialization-length
    ()
    (+
@@ -107,8 +107,8 @@
     (* 4    (length _communication_quality)) 4
     ;; int32[] _error_code
     (* 4    (length _error_code)) 4
-    ;; int32[] _gearBoxRatio
-    (* 4    (length _gearBoxRatio)) 4
+    ;; int32[] _neopixelColor
+    (* 4    (length _neopixelColor)) 4
     ))
   (:serialize
    (&optional strm)
@@ -167,10 +167,10 @@
      (dotimes (i (length _error_code))
        (write-long (elt _error_code i) s)
        )
-     ;; int32[] _gearBoxRatio
-     (write-long (length _gearBoxRatio) s)
-     (dotimes (i (length _gearBoxRatio))
-       (write-long (elt _gearBoxRatio i) s)
+     ;; int32[] _neopixelColor
+     (write-long (length _neopixelColor) s)
+     (dotimes (i (length _neopixelColor))
+       (write-long (elt _neopixelColor i) s)
        )
      ;;
      (if (null strm) (get-output-stream-string s))))
@@ -250,18 +250,18 @@
      (dotimes (i n)
      (setf (elt _error_code i) (sys::peek buf ptr- :integer)) (incf ptr- 4)
      ))
-   ;; int32[] _gearBoxRatio
+   ;; int32[] _neopixelColor
    (let (n)
      (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4)
-     (setq _gearBoxRatio (instantiate integer-vector n))
+     (setq _neopixelColor (instantiate integer-vector n))
      (dotimes (i n)
-     (setf (elt _gearBoxRatio i) (sys::peek buf ptr- :integer)) (incf ptr- 4)
+     (setf (elt _neopixelColor i) (sys::peek buf ptr- :integer)) (incf ptr- 4)
      ))
    ;;
    self)
   )
 
-(setf (get roboy_middleware_msgs::MotorInfo :md5sum-) "efed6a40bd0150d07743fdfc5f7f955c")
+(setf (get roboy_middleware_msgs::MotorInfo :md5sum-) "1504e08ef7bdc51358f095019de21feb")
 (setf (get roboy_middleware_msgs::MotorInfo :datatype-) "roboy_middleware_msgs/MotorInfo")
 (setf (get roboy_middleware_msgs::MotorInfo :definition-)
       "int32[] setpoint
@@ -275,11 +275,11 @@ int32[] PWMLimit
 int32[] pwm
 int32[] communication_quality
 int32[] error_code
-int32[] gearBoxRatio
+int32[] neopixelColor
 ")
 
 
 
-(provide :roboy_middleware_msgs/MotorInfo "efed6a40bd0150d07743fdfc5f7f955c")
+(provide :roboy_middleware_msgs/MotorInfo "1504e08ef7bdc51358f095019de21feb")
 
 

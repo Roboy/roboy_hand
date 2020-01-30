@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sausy/Projects/Hand_openBionic/catkin/src
+CMAKE_SOURCE_DIR = /home/sausy/Projects/roboy_hand/catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sausy/Projects/Hand_openBionic/catkin/build
+CMAKE_BINARY_DIR = /home/sausy/Projects/roboy_hand/catkin/build
 
 # Include any dependencies generated for this target.
 include roboy_control_center/CMakeFiles/roboy_control_center.dir/depend.make
@@ -57,98 +57,98 @@ include roboy_control_center/CMakeFiles/roboy_control_center.dir/progress.make
 # Include the compile flags for this target's objects.
 include roboy_control_center/CMakeFiles/roboy_control_center.dir/flags.make
 
-roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/include/roboy_control_center/roboy_control_center.hpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/roboy_control_center/moc_roboy_control_center.cpp"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center && /usr/lib/qt5/bin/moc @/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp_parameters
+roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp: /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/include/roboy_control_center/roboy_control_center.hpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/roboy_control_center/moc_roboy_control_center.cpp"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center && /usr/lib/qt5/bin/moc @/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp_parameters
 
-roboy_control_center/include/roboy_control_center/moc_icebus.cpp: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/include/roboy_control_center/icebus.hpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating include/roboy_control_center/moc_icebus.cpp"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center && /usr/lib/qt5/bin/moc @/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center/moc_icebus.cpp_parameters
+roboy_control_center/include/roboy_control_center/moc_icebus.cpp: /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/include/roboy_control_center/icebus.hpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating include/roboy_control_center/moc_icebus.cpp"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center && /usr/lib/qt5/bin/moc @/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center/moc_icebus.cpp_parameters
 
-roboy_control_center/qcustomplot/moc_qcustomplot.cpp: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/qcustomplot/qcustomplot.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating qcustomplot/moc_qcustomplot.cpp"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/qcustomplot && /usr/lib/qt5/bin/moc @/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp_parameters
+roboy_control_center/qcustomplot/moc_qcustomplot.cpp: /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/qcustomplot/qcustomplot.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating qcustomplot/moc_qcustomplot.cpp"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/qcustomplot && /usr/lib/qt5/bin/moc @/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp_parameters
 
-roboy_control_center/ui_roboy_control_center.h: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/roboy_control_center.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating ui_roboy_control_center.h"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/lib/qt5/bin/uic -o /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/ui_roboy_control_center.h /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/roboy_control_center.ui
+roboy_control_center/ui_roboy_control_center.h: /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/roboy_control_center.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating ui_roboy_control_center.h"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/lib/qt5/bin/uic -o /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/ui_roboy_control_center.h /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/roboy_control_center.ui
 
-roboy_control_center/ui_icebus.h: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/icebus.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating ui_icebus.h"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/lib/qt5/bin/uic -o /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/ui_icebus.h /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/icebus.ui
+roboy_control_center/ui_icebus.h: /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/icebus.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating ui_icebus.h"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/lib/qt5/bin/uic -o /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/ui_icebus.h /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/icebus.ui
 
-roboy_control_center/ui_motor.h: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/motor.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating ui_motor.h"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/lib/qt5/bin/uic -o /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/ui_motor.h /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/motor.ui
+roboy_control_center/ui_motor.h: /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/motor.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating ui_motor.h"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/lib/qt5/bin/uic -o /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/ui_motor.h /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/motor.ui
 
-roboy_control_center/ui_body_part.h: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/body_part.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating ui_body_part.h"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/lib/qt5/bin/uic -o /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/ui_body_part.h /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/body_part.ui
+roboy_control_center/ui_body_part.h: /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/body_part.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating ui_body_part.h"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/lib/qt5/bin/uic -o /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/ui_body_part.h /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/body_part.ui
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.o: roboy_control_center/CMakeFiles/roboy_control_center.dir/flags.make
-roboy_control_center/CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/roboy_control_center.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object roboy_control_center/CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/roboy_control_center.cpp
+roboy_control_center/CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/roboy_control_center.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object roboy_control_center/CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/roboy_control_center.cpp
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/roboy_control_center.cpp > CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/roboy_control_center.cpp > CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.i
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/roboy_control_center.cpp -o CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/roboy_control_center.cpp -o CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.s
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.o: roboy_control_center/CMakeFiles/roboy_control_center.dir/flags.make
 roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.o: roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp > CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp > CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.i
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp -o CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp -o CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.s
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.o: roboy_control_center/CMakeFiles/roboy_control_center.dir/flags.make
 roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.o: roboy_control_center/include/roboy_control_center/moc_icebus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center/moc_icebus.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center/moc_icebus.cpp
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center/moc_icebus.cpp > CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center/moc_icebus.cpp > CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.i
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center/moc_icebus.cpp -o CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center/moc_icebus.cpp -o CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.s
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.o: roboy_control_center/CMakeFiles/roboy_control_center.dir/flags.make
 roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.o: roboy_control_center/qcustomplot/moc_qcustomplot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp > CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp > CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.i
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp -o CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp -o CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.s
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.o: roboy_control_center/CMakeFiles/roboy_control_center.dir/flags.make
-roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.o: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/qcustomplot/qcustomplot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.o"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.o -c /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/qcustomplot/qcustomplot.cpp
+roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.o: /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/qcustomplot/qcustomplot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.o"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.o -c /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/qcustomplot/qcustomplot.cpp
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.i"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/qcustomplot/qcustomplot.cpp > CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/qcustomplot/qcustomplot.cpp > CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.i
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.s"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/qcustomplot/qcustomplot.cpp -o CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/qcustomplot/qcustomplot.cpp -o CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.s
 
 # Object files for target roboy_control_center
 roboy_control_center_OBJECTS = \
@@ -161,90 +161,90 @@ roboy_control_center_OBJECTS = \
 # External object files for target roboy_control_center
 roboy_control_center_EXTERNAL_OBJECTS =
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.o
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/build.make
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /home/sausy/Projects/Hand_openBionic/catkin/devel/lib/librviz_visualization.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libUDPSocket.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libMotorConfig.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librqt_gui_cpp.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libqt_gui_cpp.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libnodeletlib.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libbondcpp.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libclass_loader.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/libPocoFoundation.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libroslib.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librospack.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libroscpp.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librostime.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.5.2
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libinteractive_markers.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libtf_conversions.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libkdl_conversions.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libtf.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libtf2_ros.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libactionlib.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libmessage_filters.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libtf2.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libroscpp.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librostime.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
-/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX shared library /home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so"
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/roboy_control_center.dir/link.txt --verbose=$(VERBOSE)
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/src/roboy_control_center.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/qcustomplot/qcustomplot.cpp.o
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/build.make
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /home/sausy/Projects/roboy_hand/catkin/devel/lib/librviz_visualization.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /home/sausy/Projects/roboy_hand/catkin/devel/lib/libUDPSocket.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /home/sausy/Projects/roboy_hand/catkin/devel/lib/libMotorConfig.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librqt_gui_cpp.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libqt_gui_cpp.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libnodeletlib.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libbondcpp.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libclass_loader.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/libPocoFoundation.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libroslib.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librospack.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libroscpp.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librostime.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.5.2
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libinteractive_markers.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libtf_conversions.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libkdl_conversions.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libtf.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libtf2_ros.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libactionlib.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libmessage_filters.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libtf2.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libroscpp.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/librostime.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
+/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so: roboy_control_center/CMakeFiles/roboy_control_center.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX shared library /home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so"
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/roboy_control_center.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-roboy_control_center/CMakeFiles/roboy_control_center.dir/build: /home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so
+roboy_control_center/CMakeFiles/roboy_control_center.dir/build: /home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so
 
 .PHONY : roboy_control_center/CMakeFiles/roboy_control_center.dir/build
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/clean:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center && $(CMAKE_COMMAND) -P CMakeFiles/roboy_control_center.dir/cmake_clean.cmake
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center && $(CMAKE_COMMAND) -P CMakeFiles/roboy_control_center.dir/cmake_clean.cmake
 .PHONY : roboy_control_center/CMakeFiles/roboy_control_center.dir/clean
 
 roboy_control_center/CMakeFiles/roboy_control_center.dir/depend: roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp
@@ -254,6 +254,6 @@ roboy_control_center/CMakeFiles/roboy_control_center.dir/depend: roboy_control_c
 roboy_control_center/CMakeFiles/roboy_control_center.dir/depend: roboy_control_center/ui_icebus.h
 roboy_control_center/CMakeFiles/roboy_control_center.dir/depend: roboy_control_center/ui_motor.h
 roboy_control_center/CMakeFiles/roboy_control_center.dir/depend: roboy_control_center/ui_body_part.h
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sausy/Projects/Hand_openBionic/catkin/src /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center /home/sausy/Projects/Hand_openBionic/catkin/build /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/CMakeFiles/roboy_control_center.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sausy/Projects/roboy_hand/catkin/src /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center /home/sausy/Projects/roboy_hand/catkin/build /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center /home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/CMakeFiles/roboy_control_center.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : roboy_control_center/CMakeFiles/roboy_control_center.dir/depend
 

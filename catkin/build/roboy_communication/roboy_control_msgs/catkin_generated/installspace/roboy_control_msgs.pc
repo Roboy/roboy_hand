@@ -1,8 +1,8 @@
-prefix=/home/sausy/Projects/Hand_openBionic/catkin/install
+prefix=/home/sausy/Projects/roboy_hand/catkin/install
 
 Name: roboy_control_msgs
 Description: Description of roboy_control_msgs
 Version: 1.0.3
-Cflags: -I/home/sausy/Projects/Hand_openBionic/catkin/install/include
-Libs: -L/home/sausy/Projects/Hand_openBionic/catkin/install/lib 
+Cflags: -I/home/sausy/Projects/roboy_hand/catkin/install/include
+Libs: -L/home/sausy/Projects/roboy_hand/catkin/install/lib 
 Requires: roscpp message_runtime message_generation actionlib_msgs

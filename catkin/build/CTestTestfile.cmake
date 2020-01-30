@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/sausy/Projects/Hand_openBionic/catkin/src
-# Build directory: /home/sausy/Projects/Hand_openBionic/catkin/build
+# Source directory: /home/sausy/Projects/roboy_hand/catkin/src
+# Build directory: /home/sausy/Projects/roboy_hand/catkin/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

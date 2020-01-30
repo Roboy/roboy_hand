@@ -1,8 +1,8 @@
-prefix=/home/sausy/Projects/Hand_openBionic/catkin/install
+prefix=/home/sausy/Projects/roboy_hand/catkin/install
 
 Name: roboy_control_center
 Description: Description of roboy_control_center
 Version: 0.0.0
-Cflags: -I/home/sausy/Projects/Hand_openBionic/catkin/install/include
-Libs: -L/home/sausy/Projects/Hand_openBionic/catkin/install/lib -lroboy_control_center /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.5.2
+Cflags: -I/home/sausy/Projects/roboy_hand/catkin/install/include
+Libs: -L/home/sausy/Projects/roboy_hand/catkin/install/lib -lroboy_control_center /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.5.2
 Requires: roscpp rqt_gui_cpp std_msgs roboy_middleware_msgs common_utilities

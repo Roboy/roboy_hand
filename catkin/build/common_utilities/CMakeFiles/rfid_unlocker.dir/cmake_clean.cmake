@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/common_utilities/rfid_unlocker"
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/common_utilities/rfid_unlocker.pdb"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/common_utilities/rfid_unlocker"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/common_utilities/rfid_unlocker.pdb"
   "CMakeFiles/rfid_unlocker.dir/src/rfid_unlocker.cpp.o"
 )
 

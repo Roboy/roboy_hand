@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center/moc_icebus.cpp
+/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center/moc_icebus.cpp
 ../../../../src/roboy_control_center/include/roboy_control_center/icebus.hpp
-/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/include/roboy_control_center/icebus.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/include/roboy_control_center/icebus.hpp
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp
+/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/include/roboy_control_center/moc_roboy_control_center.cpp
 ../../../../src/roboy_control_center/include/roboy_control_center/roboy_control_center.hpp
-/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/include/roboy_control_center/roboy_control_center.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/include/roboy_control_center/roboy_control_center.hpp
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp
+/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp
 ../../../src/roboy_control_center/qcustomplot/qcustomplot.h
-/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/qcustomplot/qcustomplot.h
+/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/qcustomplot/qcustomplot.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
@@ -34,7 +34,7 @@ QtCore/QList
 QtCore/QVector
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/include/roboy_middleware_msgs/ControlMode.h
+/home/sausy/Projects/roboy_hand/catkin/devel/include/roboy_middleware_msgs/ControlMode.h
 ros/service_traits.h
 -
 roboy_middleware_msgs/ControlModeRequest.h
@@ -42,7 +42,7 @@ roboy_middleware_msgs/ControlModeRequest.h
 roboy_middleware_msgs/ControlModeResponse.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/include/roboy_middleware_msgs/ControlModeRequest.h
+/home/sausy/Projects/roboy_hand/catkin/devel/include/roboy_middleware_msgs/ControlModeRequest.h
 string
 -
 vector
@@ -58,7 +58,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/include/roboy_middleware_msgs/ControlModeResponse.h
+/home/sausy/Projects/roboy_hand/catkin/devel/include/roboy_middleware_msgs/ControlModeResponse.h
 string
 -
 vector
@@ -74,7 +74,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/include/roboy_middleware_msgs/MotorCommand.h
+/home/sausy/Projects/roboy_hand/catkin/devel/include/roboy_middleware_msgs/MotorCommand.h
 string
 -
 vector
@@ -90,7 +90,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/include/roboy_middleware_msgs/MotorConfig.h
+/home/sausy/Projects/roboy_hand/catkin/devel/include/roboy_middleware_msgs/MotorConfig.h
 string
 -
 vector
@@ -106,7 +106,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/include/roboy_middleware_msgs/MotorConfigService.h
+/home/sausy/Projects/roboy_hand/catkin/devel/include/roboy_middleware_msgs/MotorConfigService.h
 ros/service_traits.h
 -
 roboy_middleware_msgs/MotorConfigServiceRequest.h
@@ -114,7 +114,7 @@ roboy_middleware_msgs/MotorConfigServiceRequest.h
 roboy_middleware_msgs/MotorConfigServiceResponse.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/include/roboy_middleware_msgs/MotorConfigServiceRequest.h
+/home/sausy/Projects/roboy_hand/catkin/devel/include/roboy_middleware_msgs/MotorConfigServiceRequest.h
 string
 -
 vector
@@ -132,7 +132,7 @@ ros/message_operations.h
 roboy_middleware_msgs/MotorConfig.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/include/roboy_middleware_msgs/MotorConfigServiceResponse.h
+/home/sausy/Projects/roboy_hand/catkin/devel/include/roboy_middleware_msgs/MotorConfigServiceResponse.h
 string
 -
 vector
@@ -148,7 +148,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/include/roboy_middleware_msgs/MotorInfo.h
+/home/sausy/Projects/roboy_hand/catkin/devel/include/roboy_middleware_msgs/MotorInfo.h
 string
 -
 vector
@@ -164,7 +164,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/devel/include/roboy_middleware_msgs/MotorState.h
+/home/sausy/Projects/roboy_hand/catkin/devel/include/roboy_middleware_msgs/MotorState.h
 string
 -
 vector
@@ -180,7 +180,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include/common_utilities/CommonDefinitions.h
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include/common_utilities/CommonDefinitions.h
 stdint.h
 -
 map
@@ -188,7 +188,7 @@ map
 vector
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include/common_utilities/MotorConfig.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include/common_utilities/MotorConfig.hpp
 ros/ros.h
 -
 map
@@ -204,9 +204,9 @@ sys/stat.h
 unistd.h
 -
 CommonDefinitions.h
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include/common_utilities/CommonDefinitions.h
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include/common_utilities/CommonDefinitions.h
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/include/roboy_control_center/icebus.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/include/roboy_control_center/icebus.hpp
 ros/ros.h
 -
 common_utilities/CommonDefinitions.h
@@ -224,7 +224,7 @@ map
 rqt_gui_cpp/plugin.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/include/roboy_control_center/roboy_control_center.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/include/roboy_control_center/roboy_control_center.hpp
 ros/ros.h
 -
 rqt_gui_cpp/plugin.h
@@ -252,7 +252,7 @@ QFileDialog
 QLabel
 -
 icebus.hpp
-/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/include/roboy_control_center/icebus.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/include/roboy_control_center/icebus.hpp
 roboy_control_center/ui_roboy_control_center.h
 -
 roboy_control_center/ui_icebus.h
@@ -274,11 +274,11 @@ common_utilities/MotorConfig.hpp
 std_srvs/SetBool.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/qcustomplot/qcustomplot.cpp
+/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/qcustomplot/qcustomplot.cpp
 qcustomplot.h
-/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/qcustomplot/qcustomplot.h
+/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/qcustomplot/qcustomplot.h
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/qcustomplot/qcustomplot.h
+/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/qcustomplot/qcustomplot.h
 QObject
 -
 QPointer
@@ -328,7 +328,7 @@ QtNumeric
 QtPrintSupport/QtPrintSupport
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/src/roboy_control_center.cpp
+/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/src/roboy_control_center.cpp
 roboy_control_center/roboy_control_center.hpp
 -
 

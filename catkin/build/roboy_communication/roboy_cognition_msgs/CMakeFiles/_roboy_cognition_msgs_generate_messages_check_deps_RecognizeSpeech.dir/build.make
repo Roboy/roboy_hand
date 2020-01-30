@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sausy/Projects/Hand_openBionic/catkin/src
+CMAKE_SOURCE_DIR = /home/sausy/Projects/roboy_hand/catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sausy/Projects/Hand_openBionic/catkin/build
+CMAKE_BINARY_DIR = /home/sausy/Projects/roboy_hand/catkin/build
 
 # Utility rule file for _roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/sausy/Projects/Hand_openBionic/catkin/build
 include roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.dir/progress.make
 
 roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_communication/roboy_cognition_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py roboy_cognition_msgs /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv 
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_communication/roboy_cognition_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py roboy_cognition_msgs /home/sausy/Projects/roboy_hand/catkin/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv 
 
 _roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech: roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech
 _roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech: roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.dir/build.make
@@ -67,10 +67,10 @@ roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_genera
 .PHONY : roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.dir/build
 
 roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.dir/clean:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_communication/roboy_cognition_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.dir/cmake_clean.cmake
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_communication/roboy_cognition_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.dir/cmake_clean.cmake
 .PHONY : roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.dir/clean
 
 roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.dir/depend:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sausy/Projects/Hand_openBionic/catkin/src /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_communication/roboy_cognition_msgs /home/sausy/Projects/Hand_openBionic/catkin/build /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_communication/roboy_cognition_msgs /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sausy/Projects/roboy_hand/catkin/src /home/sausy/Projects/roboy_hand/catkin/src/roboy_communication/roboy_cognition_msgs /home/sausy/Projects/roboy_hand/catkin/build /home/sausy/Projects/roboy_hand/catkin/build/roboy_communication/roboy_cognition_msgs /home/sausy/Projects/roboy_hand/catkin/build/roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : roboy_communication/roboy_cognition_msgs/CMakeFiles/_roboy_cognition_msgs_generate_messages_check_deps_RecognizeSpeech.dir/depend
 

@@ -1,0 +1,12 @@
+[submodule "catkin/src/common_utilities"]
+	path = catkin/src/common_utilities
+	url = https://github.com/Roboy/common_utilities
+[submodule "catkin/src/roboy_communication"]
+	path = catkin/src/roboy_communication
+	url = https://github.com/Roboy/roboy_communication
+[submodule "catkin/src/roboy_control_center"]
+	path = catkin/src/roboy_control_center
+	url = https://github.com/Roboy/roboy_control_center
+[submodule "catkin/src/roboy_plexus"]
+	path = catkin/src/roboy_plexus
+	url = https://github.com/Roboy/roboy_plexus

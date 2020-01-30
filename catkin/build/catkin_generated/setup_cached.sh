@@ -7,10 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/sausy/Projects/Hand_openBionic/catkin/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/sausy/Projects/Hand_openBionic/catkin/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/sausy/Projects/Hand_openBionic/catkin/build"
-export PYTHONPATH="/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/sausy/Projects/Hand_openBionic/catkin/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/sausy/Projects/Hand_openBionic/catkin/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/sausy/Projects/roboy_hand/catkin/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/sausy/Projects/roboy_hand/catkin/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/sausy/Projects/roboy_hand/catkin/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD="/home/sausy/Projects/roboy_hand/catkin/build"
+export PYTHONPATH="/home/sausy/Projects/roboy_hand/catkin/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/sausy/Projects/roboy_hand/catkin/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/sausy/Projects/roboy_hand/catkin/src:$ROS_PACKAGE_PATH"

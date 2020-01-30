@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sausy/Projects/Hand_openBionic/catkin/src
+CMAKE_SOURCE_DIR = /home/sausy/Projects/roboy_hand/catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sausy/Projects/Hand_openBionic/catkin/build
+CMAKE_BINARY_DIR = /home/sausy/Projects/roboy_hand/catkin/build
 
 # Utility rule file for _roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/sausy/Projects/Hand_openBionic/catkin/build
 include roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.dir/progress.make
 
 roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_communication/roboy_control_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py roboy_control_msgs /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv geometry_msgs/Point
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_communication/roboy_control_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py roboy_control_msgs /home/sausy/Projects/roboy_hand/catkin/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv geometry_msgs/Point
 
 _roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion: roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion
 _roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion: roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.dir/build.make
@@ -67,10 +67,10 @@ roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_m
 .PHONY : roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.dir/build
 
 roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.dir/clean:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_communication/roboy_control_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.dir/cmake_clean.cmake
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_communication/roboy_control_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.dir/cmake_clean.cmake
 .PHONY : roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.dir/clean
 
 roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.dir/depend:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sausy/Projects/Hand_openBionic/catkin/src /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_communication/roboy_control_msgs /home/sausy/Projects/Hand_openBionic/catkin/build /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_communication/roboy_control_msgs /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sausy/Projects/roboy_hand/catkin/src /home/sausy/Projects/roboy_hand/catkin/src/roboy_communication/roboy_control_msgs /home/sausy/Projects/roboy_hand/catkin/build /home/sausy/Projects/roboy_hand/catkin/build/roboy_communication/roboy_control_msgs /home/sausy/Projects/roboy_hand/catkin/build/roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : roboy_communication/roboy_control_msgs/CMakeFiles/_roboy_control_msgs_generate_messages_check_deps_TranslationalPTPMotion.dir/depend
 

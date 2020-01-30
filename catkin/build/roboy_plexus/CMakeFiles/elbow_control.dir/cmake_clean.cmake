@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/elbow_control"
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/roboy_plexus/elbow_control.pdb"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/elbow_control"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/roboy_plexus/elbow_control.pdb"
   "CMakeFiles/elbow_control.dir/__/common_utilities/src/MotorConfig.cpp.o"
   "CMakeFiles/elbow_control.dir/src/elbow_control.cpp.o"
   "CMakeFiles/elbow_control.dir/src/interfaces/i2c.cpp.o"

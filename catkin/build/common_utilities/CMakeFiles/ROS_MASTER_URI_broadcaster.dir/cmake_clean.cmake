@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/common_utilities/ROS_MASTER_URI_broadcaster"
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/common_utilities/ROS_MASTER_URI_broadcaster.pdb"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/common_utilities/ROS_MASTER_URI_broadcaster"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/common_utilities/ROS_MASTER_URI_broadcaster.pdb"
   "CMakeFiles/ROS_MASTER_URI_broadcaster.dir/src/ROS_MASTER_URI_broadcaster.cpp.o"
 )
 

@@ -33,8 +33,7 @@ struct MotorConfig_
     , Ki()
     , Kd()
     , deadband()
-    , setpoint()
-    , gearBoxRatio()  {
+    , setpoint()  {
     }
   MotorConfig_(const ContainerAllocator& _alloc)
     : update_frequency(_alloc)
@@ -46,8 +45,7 @@ struct MotorConfig_
     , Ki(_alloc)
     , Kd(_alloc)
     , deadband(_alloc)
-    , setpoint(_alloc)
-    , gearBoxRatio(_alloc)  {
+    , setpoint(_alloc)  {
   (void)_alloc;
     }
 
@@ -82,9 +80,6 @@ struct MotorConfig_
 
    typedef std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other >  _setpoint_type;
   _setpoint_type setpoint;
-
-   typedef std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other >  _gearBoxRatio_type;
-  _gearBoxRatio_type gearBoxRatio;
 
 
 
@@ -121,7 +116,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg'], 'roboy_middleware_msgs': ['/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_communication/roboy_middleware_msgs/msg'], 'geometry_msgs': ['/opt/ros/melodic/share/geometry_msgs/cmake/../msg']}
+// {'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg'], 'roboy_middleware_msgs': ['/home/sausy/Projects/roboy_hand/catkin/src/roboy_communication/roboy_middleware_msgs/msg'], 'geometry_msgs': ['/opt/ros/melodic/share/geometry_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -164,12 +159,12 @@ struct MD5Sum< ::roboy_middleware_msgs::MotorConfig_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "e8035a85d6754846f143f80bcf9f5f79";
+    return "dea90ac772f67b4803331b153304163f";
   }
 
   static const char* value(const ::roboy_middleware_msgs::MotorConfig_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xe8035a85d6754846ULL;
-  static const uint64_t static_value2 = 0xf143f80bcf9f5f79ULL;
+  static const uint64_t static_value1 = 0xdea90ac772f67b48ULL;
+  static const uint64_t static_value2 = 0x03331b153304163fULL;
 };
 
 template<class ContainerAllocator>
@@ -198,7 +193,6 @@ struct Definition< ::roboy_middleware_msgs::MotorConfig_<ContainerAllocator> >
 "int32[] Kd\n"
 "int32[] deadband\n"
 "int32[] setpoint\n"
-"int32[] gearBoxRatio\n"
 ;
   }
 
@@ -227,7 +221,6 @@ namespace serialization
       stream.next(m.Kd);
       stream.next(m.deadband);
       stream.next(m.setpoint);
-      stream.next(m.gearBoxRatio);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -305,12 +298,6 @@ struct Printer< ::roboy_middleware_msgs::MotorConfig_<ContainerAllocator> >
     {
       s << indent << "  setpoint[" << i << "]: ";
       Printer<int32_t>::stream(s, indent + "  ", v.setpoint[i]);
-    }
-    s << indent << "gearBoxRatio[]" << std::endl;
-    for (size_t i = 0; i < v.gearBoxRatio.size(); ++i)
-    {
-      s << indent << "  gearBoxRatio[" << i << "]: ";
-      Printer<int32_t>::stream(s, indent + "  ", v.gearBoxRatio[i]);
     }
   }
 };

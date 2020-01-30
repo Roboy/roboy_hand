@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/utility/ROS_MASTER_URI_receiver.cpp" "/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/ROS_MASTER_URI_receiver.cpp.o"
-  "/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/src/utility/UDPSocket.cpp" "/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/UDPSocket.cpp.o"
+  "/home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/utility/ROS_MASTER_URI_receiver.cpp" "/home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/ROS_MASTER_URI_receiver.cpp.o"
+  "/home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/src/utility/UDPSocket.cpp" "/home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/UDPSocket.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -19,12 +19,12 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/include"
-  "/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/arm/usr/include/arm-linux-gnueabihf"
+  "/home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/include"
+  "/home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/arm/usr/include/arm-linux-gnueabihf"
   "/usr/include/eigen3"
-  "/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/roboy_plexus"
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/include"
-  "/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include"
+  "/home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus/include/roboy_plexus"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/include"
+  "/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/opt/ros/melodic/share/orocos_kdl/cmake/../../../include"
@@ -33,11 +33,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/sausy/intelFPGA/18.1/embedded/ip/altera/hps/altera_hps/hwlib/soc_cv_av"
   "/home/sausy/intelFPGA/18.1/embedded/ip/altera/hps/altera_hps/hwlib/include"
   "/home/sausy/intelFPGA/18.1/embedded/ip/altera/hps/altera_hps/hwlib/include/soc_cv_av"
-  "/home/sausy/intelFPGA/18.1/embedded/examples/hardware/cv_soc_devkit_ghrd/software/preloader/uboot-socfpga/arch/arm/include/asm"
-  "/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc"
-  "/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc/ip"
-  "/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc/ip/inc"
-  "/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus/include/nios2_inc/eds/inc"
   )
 
 # Targets to which this target links.

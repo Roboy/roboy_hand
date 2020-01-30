@@ -1,8 +1,8 @@
-# Install script for directory: /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center
+# Install script for directory: /home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sausy/Projects/Hand_openBionic/catkin/install")
+  set(CMAKE_INSTALL_PREFIX "/home/sausy/Projects/roboy_hand/catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,22 +38,22 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/catkin_generated/safe_execute_install.cmake")
+  include("/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/catkin_generated/installspace/roboy_control_center.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/catkin_generated/installspace/roboy_control_center.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboy_control_center/cmake" TYPE FILE FILES
-    "/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/catkin_generated/installspace/roboy_control_centerConfig.cmake"
-    "/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/catkin_generated/installspace/roboy_control_centerConfig-version.cmake"
+    "/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/catkin_generated/installspace/roboy_control_centerConfig.cmake"
+    "/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/catkin_generated/installspace/roboy_control_centerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboy_control_center" TYPE FILE FILES "/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboy_control_center" TYPE FILE FILES "/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -63,12 +63,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/roboy_rqt_plugins/libroboy_control_center.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/roboy_rqt_plugins" TYPE SHARED_LIBRARY FILES "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/roboy_rqt_plugins" TYPE SHARED_LIBRARY FILES "/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/roboy_rqt_plugins/libroboy_control_center.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/roboy_rqt_plugins/libroboy_control_center.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/roboy_rqt_plugins/libroboy_control_center.so"
-         OLD_RPATH "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib:/opt/ros/melodic/lib:"
+         OLD_RPATH "/home/sausy/Projects/roboy_hand/catkin/devel/lib:/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/roboy_rqt_plugins/libroboy_control_center.so")
@@ -80,6 +80,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboy_control_center" TYPE FILE FILES "/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboy_control_center" TYPE FILE FILES "/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/package.xml")
 endif()
 

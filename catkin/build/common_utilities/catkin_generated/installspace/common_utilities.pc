@@ -1,8 +1,8 @@
-prefix=/home/sausy/Projects/Hand_openBionic/catkin/install
+prefix=/home/sausy/Projects/roboy_hand/catkin/install
 
 Name: common_utilities
 Description: Description of common_utilities
 Version: 0.0.0
-Cflags: -I/home/sausy/Projects/Hand_openBionic/catkin/install/include
-Libs: -L/home/sausy/Projects/Hand_openBionic/catkin/install/lib -lrviz_visualization -lUDPSocket -lMotorConfig
+Cflags: -I/home/sausy/Projects/roboy_hand/catkin/install/include
+Libs: -L/home/sausy/Projects/roboy_hand/catkin/install/lib -lrviz_visualization -lUDPSocket -lMotorConfig
 Requires: message_runtime

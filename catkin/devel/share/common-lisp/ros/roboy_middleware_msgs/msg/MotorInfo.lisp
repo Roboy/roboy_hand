@@ -62,9 +62,9 @@
     :initarg :error_code
     :type (cl:vector cl:integer)
    :initform (cl:make-array 0 :element-type 'cl:integer :initial-element 0))
-   (gearBoxRatio
-    :reader gearBoxRatio
-    :initarg :gearBoxRatio
+   (neopixelColor
+    :reader neopixelColor
+    :initarg :neopixelColor
     :type (cl:vector cl:integer)
    :initform (cl:make-array 0 :element-type 'cl:integer :initial-element 0)))
 )
@@ -132,10 +132,10 @@
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader roboy_middleware_msgs-msg:error_code-val is deprecated.  Use roboy_middleware_msgs-msg:error_code instead.")
   (error_code m))
 
-(cl:ensure-generic-function 'gearBoxRatio-val :lambda-list '(m))
-(cl:defmethod gearBoxRatio-val ((m <MotorInfo>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader roboy_middleware_msgs-msg:gearBoxRatio-val is deprecated.  Use roboy_middleware_msgs-msg:gearBoxRatio instead.")
-  (gearBoxRatio m))
+(cl:ensure-generic-function 'neopixelColor-val :lambda-list '(m))
+(cl:defmethod neopixelColor-val ((m <MotorInfo>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader roboy_middleware_msgs-msg:neopixelColor-val is deprecated.  Use roboy_middleware_msgs-msg:neopixelColor instead.")
+  (neopixelColor m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <MotorInfo>) ostream)
   "Serializes a message object of type '<MotorInfo>"
   (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'setpoint))))
@@ -265,7 +265,7 @@
     (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
     ))
    (cl:slot-value msg 'error_code))
-  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'gearBoxRatio))))
+  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'neopixelColor))))
     (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
@@ -276,7 +276,7 @@
     (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
     ))
-   (cl:slot-value msg 'gearBoxRatio))
+   (cl:slot-value msg 'neopixelColor))
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <MotorInfo>) istream)
   "Deserializes a message object of type '<MotorInfo>"
@@ -434,8 +434,8 @@
     (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
     (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
     (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
-  (cl:setf (cl:slot-value msg 'gearBoxRatio) (cl:make-array __ros_arr_len))
-  (cl:let ((vals (cl:slot-value msg 'gearBoxRatio)))
+  (cl:setf (cl:slot-value msg 'neopixelColor) (cl:make-array __ros_arr_len))
+  (cl:let ((vals (cl:slot-value msg 'neopixelColor)))
     (cl:dotimes (i __ros_arr_len)
     (cl:let ((unsigned 0))
       (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
@@ -453,16 +453,16 @@
   "roboy_middleware_msgs/MotorInfo")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<MotorInfo>)))
   "Returns md5sum for a message object of type '<MotorInfo>"
-  "efed6a40bd0150d07743fdfc5f7f955c")
+  "1504e08ef7bdc51358f095019de21feb")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'MotorInfo)))
   "Returns md5sum for a message object of type 'MotorInfo"
-  "efed6a40bd0150d07743fdfc5f7f955c")
+  "1504e08ef7bdc51358f095019de21feb")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<MotorInfo>)))
   "Returns full string definition for message of type '<MotorInfo>"
-  (cl:format cl:nil "int32[] setpoint~%uint8[] control_mode~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] IntegralLimit~%int32[] PWMLimit~%int32[] pwm~%int32[] communication_quality~%int32[] error_code~%int32[] gearBoxRatio~%~%"))
+  (cl:format cl:nil "int32[] setpoint~%uint8[] control_mode~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] IntegralLimit~%int32[] PWMLimit~%int32[] pwm~%int32[] communication_quality~%int32[] error_code~%int32[] neopixelColor~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'MotorInfo)))
   "Returns full string definition for message of type 'MotorInfo"
-  (cl:format cl:nil "int32[] setpoint~%uint8[] control_mode~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] IntegralLimit~%int32[] PWMLimit~%int32[] pwm~%int32[] communication_quality~%int32[] error_code~%int32[] gearBoxRatio~%~%"))
+  (cl:format cl:nil "int32[] setpoint~%uint8[] control_mode~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] IntegralLimit~%int32[] PWMLimit~%int32[] pwm~%int32[] communication_quality~%int32[] error_code~%int32[] neopixelColor~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <MotorInfo>))
   (cl:+ 0
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'setpoint) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
@@ -476,7 +476,7 @@
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'pwm) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'communication_quality) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'error_code) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
-     4 (cl:reduce #'cl:+ (cl:slot-value msg 'gearBoxRatio) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
+     4 (cl:reduce #'cl:+ (cl:slot-value msg 'neopixelColor) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <MotorInfo>))
   "Converts a ROS message object to a list"
@@ -492,5 +492,5 @@
     (cl:cons ':pwm (pwm msg))
     (cl:cons ':communication_quality (communication_quality msg))
     (cl:cons ':error_code (error_code msg))
-    (cl:cons ':gearBoxRatio (gearBoxRatio msg))
+    (cl:cons ':neopixelColor (neopixelColor msg))
 ))

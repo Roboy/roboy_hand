@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sausy/Projects/Hand_openBionic/catkin/src
+CMAKE_SOURCE_DIR = /home/sausy/Projects/roboy_hand/catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sausy/Projects/Hand_openBionic/catkin/build
+CMAKE_BINARY_DIR = /home/sausy/Projects/roboy_hand/catkin/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus/CMakeFiles/progress.marks
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sausy/Projects/Hand_openBionic/catkin/build/CMakeFiles 0
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus/CMakeFiles/progress.marks
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sausy/Projects/roboy_hand/catkin/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/clean
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/preinstall
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/preinstall
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ nav_msgs_generate_messages_cpp: roboy_plexus/CMakeFiles/nav_msgs_generate_messag
 
 # fast build rule for target.
 nav_msgs_generate_messages_cpp/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make roboy_plexus/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make roboy_plexus/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 .PHONY : nav_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/roboy_plexus.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/roboy_plexus.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/roboy_plexus.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/roboy_plexus.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ roboy_plexus: roboy_plexus/CMakeFiles/roboy_plexus.dir/rule
 
 # fast build rule for target.
 roboy_plexus/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/build
 .PHONY : roboy_plexus/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/elbow_control.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/elbow_control.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/elbow_control.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/elbow_control.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ elbow_control: roboy_plexus/CMakeFiles/elbow_control.dir/rule
 
 # fast build rule for target.
 elbow_control/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/build
 .PHONY : elbow_control/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/map_msgs_generate_messages_py.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/map_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ map_msgs_generate_messages_py: roboy_plexus/CMakeFiles/map_msgs_generate_message
 
 # fast build rule for target.
 map_msgs_generate_messages_py/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/map_msgs_generate_messages_py.dir/build.make roboy_plexus/CMakeFiles/map_msgs_generate_messages_py.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/map_msgs_generate_messages_py.dir/build.make roboy_plexus/CMakeFiles/map_msgs_generate_messages_py.dir/build
 .PHONY : map_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/map_msgs_generate_messages_eus.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ map_msgs_generate_messages_eus: roboy_plexus/CMakeFiles/map_msgs_generate_messag
 
 # fast build rule for target.
 map_msgs_generate_messages_eus/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make roboy_plexus/CMakeFiles/map_msgs_generate_messages_eus.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make roboy_plexus/CMakeFiles/map_msgs_generate_messages_eus.dir/build
 .PHONY : map_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ nav_msgs_generate_messages_lisp: roboy_plexus/CMakeFiles/nav_msgs_generate_messa
 
 # fast build rule for target.
 nav_msgs_generate_messages_lisp/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make roboy_plexus/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make roboy_plexus/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
 .PHONY : nav_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ map_msgs_generate_messages_cpp: roboy_plexus/CMakeFiles/map_msgs_generate_messag
 
 # fast build rule for target.
 map_msgs_generate_messages_cpp/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make roboy_plexus/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make roboy_plexus/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
 .PHONY : map_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ nav_msgs_generate_messages_eus: roboy_plexus/CMakeFiles/nav_msgs_generate_messag
 
 # fast build rule for target.
 nav_msgs_generate_messages_eus/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make roboy_plexus/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make roboy_plexus/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
 .PHONY : nav_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ map_msgs_generate_messages_nodejs: roboy_plexus/CMakeFiles/map_msgs_generate_mes
 
 # fast build rule for target.
 map_msgs_generate_messages_nodejs/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make roboy_plexus/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make roboy_plexus/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
 .PHONY : map_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ map_msgs_generate_messages_lisp: roboy_plexus/CMakeFiles/map_msgs_generate_messa
 
 # fast build rule for target.
 map_msgs_generate_messages_lisp/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
 .PHONY : map_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ nav_msgs_generate_messages_nodejs: roboy_plexus/CMakeFiles/nav_msgs_generate_mes
 
 # fast build rule for target.
 nav_msgs_generate_messages_nodejs/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make roboy_plexus/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make roboy_plexus/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
 .PHONY : nav_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ nav_msgs_generate_messages_py: roboy_plexus/CMakeFiles/nav_msgs_generate_message
 
 # fast build rule for target.
 nav_msgs_generate_messages_py/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make roboy_plexus/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make roboy_plexus/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 .PHONY : nav_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/rule:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/rule
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/rule
 .PHONY : roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/rule
 
 # Convenience name for target.
@@ -359,7 +359,7 @@ automaticRoboyPlexusLauncher: roboy_plexus/CMakeFiles/automaticRoboyPlexusLaunch
 
 # fast build rule for target.
 automaticRoboyPlexusLauncher/fast:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build
 .PHONY : automaticRoboyPlexusLauncher/fast
 
 __/common_utilities/src/MotorConfig.o: __/common_utilities/src/MotorConfig.cpp.o
@@ -368,8 +368,8 @@ __/common_utilities/src/MotorConfig.o: __/common_utilities/src/MotorConfig.cpp.o
 
 # target to build an object file
 __/common_utilities/src/MotorConfig.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/__/common_utilities/src/MotorConfig.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/__/common_utilities/src/MotorConfig.cpp.o
 .PHONY : __/common_utilities/src/MotorConfig.cpp.o
 
 __/common_utilities/src/MotorConfig.i: __/common_utilities/src/MotorConfig.cpp.i
@@ -378,8 +378,8 @@ __/common_utilities/src/MotorConfig.i: __/common_utilities/src/MotorConfig.cpp.i
 
 # target to preprocess a source file
 __/common_utilities/src/MotorConfig.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.i
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/__/common_utilities/src/MotorConfig.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/__/common_utilities/src/MotorConfig.cpp.i
 .PHONY : __/common_utilities/src/MotorConfig.cpp.i
 
 __/common_utilities/src/MotorConfig.s: __/common_utilities/src/MotorConfig.cpp.s
@@ -388,63 +388,9 @@ __/common_utilities/src/MotorConfig.s: __/common_utilities/src/MotorConfig.cpp.s
 
 # target to generate assembly for a file
 __/common_utilities/src/MotorConfig.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.s
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/__/common_utilities/src/MotorConfig.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/__/common_utilities/src/MotorConfig.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/__/common_utilities/src/MotorConfig.cpp.s
 .PHONY : __/common_utilities/src/MotorConfig.cpp.s
-
-include/nios2_inc/eds/src/alt_find_dev.o: include/nios2_inc/eds/src/alt_find_dev.c.o
-
-.PHONY : include/nios2_inc/eds/src/alt_find_dev.o
-
-# target to build an object file
-include/nios2_inc/eds/src/alt_find_dev.c.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.o
-.PHONY : include/nios2_inc/eds/src/alt_find_dev.c.o
-
-include/nios2_inc/eds/src/alt_find_dev.i: include/nios2_inc/eds/src/alt_find_dev.c.i
-
-.PHONY : include/nios2_inc/eds/src/alt_find_dev.i
-
-# target to preprocess a source file
-include/nios2_inc/eds/src/alt_find_dev.c.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.i
-.PHONY : include/nios2_inc/eds/src/alt_find_dev.c.i
-
-include/nios2_inc/eds/src/alt_find_dev.s: include/nios2_inc/eds/src/alt_find_dev.c.s
-
-.PHONY : include/nios2_inc/eds/src/alt_find_dev.s
-
-# target to generate assembly for a file
-include/nios2_inc/eds/src/alt_find_dev.c.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_find_dev.c.s
-.PHONY : include/nios2_inc/eds/src/alt_find_dev.c.s
-
-include/nios2_inc/eds/src/alt_open.o: include/nios2_inc/eds/src/alt_open.c.o
-
-.PHONY : include/nios2_inc/eds/src/alt_open.o
-
-# target to build an object file
-include/nios2_inc/eds/src/alt_open.c.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.o
-.PHONY : include/nios2_inc/eds/src/alt_open.c.o
-
-include/nios2_inc/eds/src/alt_open.i: include/nios2_inc/eds/src/alt_open.c.i
-
-.PHONY : include/nios2_inc/eds/src/alt_open.i
-
-# target to preprocess a source file
-include/nios2_inc/eds/src/alt_open.c.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.i
-.PHONY : include/nios2_inc/eds/src/alt_open.c.i
-
-include/nios2_inc/eds/src/alt_open.s: include/nios2_inc/eds/src/alt_open.c.s
-
-.PHONY : include/nios2_inc/eds/src/alt_open.s
-
-# target to generate assembly for a file
-include/nios2_inc/eds/src/alt_open.c.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/include/nios2_inc/eds/src/alt_open.c.s
-.PHONY : include/nios2_inc/eds/src/alt_open.c.s
 
 src/control/controlActions.o: src/control/controlActions.cpp.o
 
@@ -452,7 +398,7 @@ src/control/controlActions.o: src/control/controlActions.cpp.o
 
 # target to build an object file
 src/control/controlActions.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.o
 .PHONY : src/control/controlActions.cpp.o
 
 src/control/controlActions.i: src/control/controlActions.cpp.i
@@ -461,7 +407,7 @@ src/control/controlActions.i: src/control/controlActions.cpp.i
 
 # target to preprocess a source file
 src/control/controlActions.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.i
 .PHONY : src/control/controlActions.cpp.i
 
 src/control/controlActions.s: src/control/controlActions.cpp.s
@@ -470,7 +416,7 @@ src/control/controlActions.s: src/control/controlActions.cpp.s
 
 # target to generate assembly for a file
 src/control/controlActions.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/control/controlActions.cpp.s
 .PHONY : src/control/controlActions.cpp.s
 
 src/elbow_control.o: src/elbow_control.cpp.o
@@ -479,7 +425,7 @@ src/elbow_control.o: src/elbow_control.cpp.o
 
 # target to build an object file
 src/elbow_control.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/elbow_control.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/elbow_control.cpp.o
 .PHONY : src/elbow_control.cpp.o
 
 src/elbow_control.i: src/elbow_control.cpp.i
@@ -488,7 +434,7 @@ src/elbow_control.i: src/elbow_control.cpp.i
 
 # target to preprocess a source file
 src/elbow_control.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/elbow_control.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/elbow_control.cpp.i
 .PHONY : src/elbow_control.cpp.i
 
 src/elbow_control.s: src/elbow_control.cpp.s
@@ -497,35 +443,35 @@ src/elbow_control.s: src/elbow_control.cpp.s
 
 # target to generate assembly for a file
 src/elbow_control.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/elbow_control.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/elbow_control.cpp.s
 .PHONY : src/elbow_control.cpp.s
 
-src/interfaces/altera_up_avalon_rs232.o: src/interfaces/altera_up_avalon_rs232.c.o
+src/interfaces/hand.o: src/interfaces/hand.cpp.o
 
-.PHONY : src/interfaces/altera_up_avalon_rs232.o
+.PHONY : src/interfaces/hand.o
 
 # target to build an object file
-src/interfaces/altera_up_avalon_rs232.c.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.o
-.PHONY : src/interfaces/altera_up_avalon_rs232.c.o
+src/interfaces/hand.cpp.o:
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.o
+.PHONY : src/interfaces/hand.cpp.o
 
-src/interfaces/altera_up_avalon_rs232.i: src/interfaces/altera_up_avalon_rs232.c.i
+src/interfaces/hand.i: src/interfaces/hand.cpp.i
 
-.PHONY : src/interfaces/altera_up_avalon_rs232.i
+.PHONY : src/interfaces/hand.i
 
 # target to preprocess a source file
-src/interfaces/altera_up_avalon_rs232.c.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.i
-.PHONY : src/interfaces/altera_up_avalon_rs232.c.i
+src/interfaces/hand.cpp.i:
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.i
+.PHONY : src/interfaces/hand.cpp.i
 
-src/interfaces/altera_up_avalon_rs232.s: src/interfaces/altera_up_avalon_rs232.c.s
+src/interfaces/hand.s: src/interfaces/hand.cpp.s
 
-.PHONY : src/interfaces/altera_up_avalon_rs232.s
+.PHONY : src/interfaces/hand.s
 
 # target to generate assembly for a file
-src/interfaces/altera_up_avalon_rs232.c.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/altera_up_avalon_rs232.c.s
-.PHONY : src/interfaces/altera_up_avalon_rs232.c.s
+src/interfaces/hand.cpp.s:
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/hand.cpp.s
+.PHONY : src/interfaces/hand.cpp.s
 
 src/interfaces/i2c.o: src/interfaces/i2c.cpp.o
 
@@ -533,8 +479,8 @@ src/interfaces/i2c.o: src/interfaces/i2c.cpp.o
 
 # target to build an object file
 src/interfaces/i2c.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/i2c.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/i2c.cpp.o
 .PHONY : src/interfaces/i2c.cpp.o
 
 src/interfaces/i2c.i: src/interfaces/i2c.cpp.i
@@ -543,8 +489,8 @@ src/interfaces/i2c.i: src/interfaces/i2c.cpp.i
 
 # target to preprocess a source file
 src/interfaces/i2c.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.i
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/i2c.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/i2c.cpp.i
 .PHONY : src/interfaces/i2c.cpp.i
 
 src/interfaces/i2c.s: src/interfaces/i2c.cpp.s
@@ -553,8 +499,8 @@ src/interfaces/i2c.s: src/interfaces/i2c.cpp.s
 
 # target to generate assembly for a file
 src/interfaces/i2c.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.s
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/i2c.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/i2c.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/i2c.cpp.s
 .PHONY : src/interfaces/i2c.cpp.s
 
 src/interfaces/icebusControl.o: src/interfaces/icebusControl.cpp.o
@@ -563,8 +509,8 @@ src/interfaces/icebusControl.o: src/interfaces/icebusControl.cpp.o
 
 # target to build an object file
 src/interfaces/icebusControl.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.o
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/icebusControl.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/icebusControl.cpp.o
 .PHONY : src/interfaces/icebusControl.cpp.o
 
 src/interfaces/icebusControl.i: src/interfaces/icebusControl.cpp.i
@@ -573,8 +519,8 @@ src/interfaces/icebusControl.i: src/interfaces/icebusControl.cpp.i
 
 # target to preprocess a source file
 src/interfaces/icebusControl.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.i
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/icebusControl.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/icebusControl.cpp.i
 .PHONY : src/interfaces/icebusControl.cpp.i
 
 src/interfaces/icebusControl.s: src/interfaces/icebusControl.cpp.s
@@ -583,8 +529,8 @@ src/interfaces/icebusControl.s: src/interfaces/icebusControl.cpp.s
 
 # target to generate assembly for a file
 src/interfaces/icebusControl.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.s
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/icebusControl.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/icebusControl.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/icebusControl.cpp.s
 .PHONY : src/interfaces/icebusControl.cpp.s
 
 src/interfaces/motorControl.o: src/interfaces/motorControl.cpp.o
@@ -593,8 +539,8 @@ src/interfaces/motorControl.o: src/interfaces/motorControl.cpp.o
 
 # target to build an object file
 src/interfaces/motorControl.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/motorControl.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/motorControl.cpp.o
 .PHONY : src/interfaces/motorControl.cpp.o
 
 src/interfaces/motorControl.i: src/interfaces/motorControl.cpp.i
@@ -603,8 +549,8 @@ src/interfaces/motorControl.i: src/interfaces/motorControl.cpp.i
 
 # target to preprocess a source file
 src/interfaces/motorControl.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.i
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/motorControl.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/motorControl.cpp.i
 .PHONY : src/interfaces/motorControl.cpp.i
 
 src/interfaces/motorControl.s: src/interfaces/motorControl.cpp.s
@@ -613,8 +559,8 @@ src/interfaces/motorControl.s: src/interfaces/motorControl.cpp.s
 
 # target to generate assembly for a file
 src/interfaces/motorControl.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.s
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/motorControl.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/motorControl.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/interfaces/motorControl.cpp.s
 .PHONY : src/interfaces/motorControl.cpp.s
 
 src/interfaces/myoControl.o: src/interfaces/myoControl.cpp.o
@@ -623,7 +569,7 @@ src/interfaces/myoControl.o: src/interfaces/myoControl.cpp.o
 
 # target to build an object file
 src/interfaces/myoControl.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.o
 .PHONY : src/interfaces/myoControl.cpp.o
 
 src/interfaces/myoControl.i: src/interfaces/myoControl.cpp.i
@@ -632,7 +578,7 @@ src/interfaces/myoControl.i: src/interfaces/myoControl.cpp.i
 
 # target to preprocess a source file
 src/interfaces/myoControl.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.i
 .PHONY : src/interfaces/myoControl.cpp.i
 
 src/interfaces/myoControl.s: src/interfaces/myoControl.cpp.s
@@ -641,7 +587,7 @@ src/interfaces/myoControl.s: src/interfaces/myoControl.cpp.s
 
 # target to generate assembly for a file
 src/interfaces/myoControl.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/interfaces/myoControl.cpp.s
 .PHONY : src/interfaces/myoControl.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -650,7 +596,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -659,7 +605,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -668,7 +614,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/roboyPlexus.o: src/roboyPlexus.cpp.o
@@ -677,7 +623,7 @@ src/roboyPlexus.o: src/roboyPlexus.cpp.o
 
 # target to build an object file
 src/roboyPlexus.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.o
 .PHONY : src/roboyPlexus.cpp.o
 
 src/roboyPlexus.i: src/roboyPlexus.cpp.i
@@ -686,7 +632,7 @@ src/roboyPlexus.i: src/roboyPlexus.cpp.i
 
 # target to preprocess a source file
 src/roboyPlexus.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.i
 .PHONY : src/roboyPlexus.cpp.i
 
 src/roboyPlexus.s: src/roboyPlexus.cpp.s
@@ -695,7 +641,7 @@ src/roboyPlexus.s: src/roboyPlexus.cpp.s
 
 # target to generate assembly for a file
 src/roboyPlexus.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/roboyPlexus.cpp.s
 .PHONY : src/roboyPlexus.cpp.s
 
 src/sensors/A1335.o: src/sensors/A1335.cpp.o
@@ -704,8 +650,8 @@ src/sensors/A1335.o: src/sensors/A1335.cpp.o
 
 # target to build an object file
 src/sensors/A1335.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/sensors/A1335.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/sensors/A1335.cpp.o
 .PHONY : src/sensors/A1335.cpp.o
 
 src/sensors/A1335.i: src/sensors/A1335.cpp.i
@@ -714,8 +660,8 @@ src/sensors/A1335.i: src/sensors/A1335.cpp.i
 
 # target to preprocess a source file
 src/sensors/A1335.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.i
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/sensors/A1335.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/sensors/A1335.cpp.i
 .PHONY : src/sensors/A1335.cpp.i
 
 src/sensors/A1335.s: src/sensors/A1335.cpp.s
@@ -724,8 +670,8 @@ src/sensors/A1335.s: src/sensors/A1335.cpp.s
 
 # target to generate assembly for a file
 src/sensors/A1335.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.s
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/sensors/A1335.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/A1335.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/elbow_control.dir/build.make roboy_plexus/CMakeFiles/elbow_control.dir/src/sensors/A1335.cpp.s
 .PHONY : src/sensors/A1335.cpp.s
 
 src/sensors/tle493d_w2b6.o: src/sensors/tle493d_w2b6.cpp.o
@@ -734,7 +680,7 @@ src/sensors/tle493d_w2b6.o: src/sensors/tle493d_w2b6.cpp.o
 
 # target to build an object file
 src/sensors/tle493d_w2b6.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.o
 .PHONY : src/sensors/tle493d_w2b6.cpp.o
 
 src/sensors/tle493d_w2b6.i: src/sensors/tle493d_w2b6.cpp.i
@@ -743,7 +689,7 @@ src/sensors/tle493d_w2b6.i: src/sensors/tle493d_w2b6.cpp.i
 
 # target to preprocess a source file
 src/sensors/tle493d_w2b6.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.i
 .PHONY : src/sensors/tle493d_w2b6.cpp.i
 
 src/sensors/tle493d_w2b6.s: src/sensors/tle493d_w2b6.cpp.s
@@ -752,7 +698,7 @@ src/sensors/tle493d_w2b6.s: src/sensors/tle493d_w2b6.cpp.s
 
 # target to generate assembly for a file
 src/sensors/tle493d_w2b6.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/sensors/tle493d_w2b6.cpp.s
 .PHONY : src/sensors/tle493d_w2b6.cpp.s
 
 src/utility/ROS_MASTER_URI_receiver.o: src/utility/ROS_MASTER_URI_receiver.cpp.o
@@ -761,7 +707,7 @@ src/utility/ROS_MASTER_URI_receiver.o: src/utility/ROS_MASTER_URI_receiver.cpp.o
 
 # target to build an object file
 src/utility/ROS_MASTER_URI_receiver.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/ROS_MASTER_URI_receiver.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/ROS_MASTER_URI_receiver.cpp.o
 .PHONY : src/utility/ROS_MASTER_URI_receiver.cpp.o
 
 src/utility/ROS_MASTER_URI_receiver.i: src/utility/ROS_MASTER_URI_receiver.cpp.i
@@ -770,7 +716,7 @@ src/utility/ROS_MASTER_URI_receiver.i: src/utility/ROS_MASTER_URI_receiver.cpp.i
 
 # target to preprocess a source file
 src/utility/ROS_MASTER_URI_receiver.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/ROS_MASTER_URI_receiver.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/ROS_MASTER_URI_receiver.cpp.i
 .PHONY : src/utility/ROS_MASTER_URI_receiver.cpp.i
 
 src/utility/ROS_MASTER_URI_receiver.s: src/utility/ROS_MASTER_URI_receiver.cpp.s
@@ -779,7 +725,7 @@ src/utility/ROS_MASTER_URI_receiver.s: src/utility/ROS_MASTER_URI_receiver.cpp.s
 
 # target to generate assembly for a file
 src/utility/ROS_MASTER_URI_receiver.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/ROS_MASTER_URI_receiver.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/ROS_MASTER_URI_receiver.cpp.s
 .PHONY : src/utility/ROS_MASTER_URI_receiver.cpp.s
 
 src/utility/UDPSocket.o: src/utility/UDPSocket.cpp.o
@@ -788,8 +734,8 @@ src/utility/UDPSocket.o: src/utility/UDPSocket.cpp.o
 
 # target to build an object file
 src/utility/UDPSocket.cpp.o:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/UDPSocket.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.o
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/UDPSocket.cpp.o
 .PHONY : src/utility/UDPSocket.cpp.o
 
 src/utility/UDPSocket.i: src/utility/UDPSocket.cpp.i
@@ -798,8 +744,8 @@ src/utility/UDPSocket.i: src/utility/UDPSocket.cpp.i
 
 # target to preprocess a source file
 src/utility/UDPSocket.cpp.i:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.i
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/UDPSocket.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.i
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/UDPSocket.cpp.i
 .PHONY : src/utility/UDPSocket.cpp.i
 
 src/utility/UDPSocket.s: src/utility/UDPSocket.cpp.s
@@ -808,8 +754,8 @@ src/utility/UDPSocket.s: src/utility/UDPSocket.cpp.s
 
 # target to generate assembly for a file
 src/utility/UDPSocket.cpp.s:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.s
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/UDPSocket.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/roboy_plexus.dir/build.make roboy_plexus/CMakeFiles/roboy_plexus.dir/src/utility/UDPSocket.cpp.s
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(MAKE) -f roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/build.make roboy_plexus/CMakeFiles/automaticRoboyPlexusLauncher.dir/src/utility/UDPSocket.cpp.s
 .PHONY : src/utility/UDPSocket.cpp.s
 
 # Help Target
@@ -841,21 +787,15 @@ help:
 	@echo "... __/common_utilities/src/MotorConfig.o"
 	@echo "... __/common_utilities/src/MotorConfig.i"
 	@echo "... __/common_utilities/src/MotorConfig.s"
-	@echo "... include/nios2_inc/eds/src/alt_find_dev.o"
-	@echo "... include/nios2_inc/eds/src/alt_find_dev.i"
-	@echo "... include/nios2_inc/eds/src/alt_find_dev.s"
-	@echo "... include/nios2_inc/eds/src/alt_open.o"
-	@echo "... include/nios2_inc/eds/src/alt_open.i"
-	@echo "... include/nios2_inc/eds/src/alt_open.s"
 	@echo "... src/control/controlActions.o"
 	@echo "... src/control/controlActions.i"
 	@echo "... src/control/controlActions.s"
 	@echo "... src/elbow_control.o"
 	@echo "... src/elbow_control.i"
 	@echo "... src/elbow_control.s"
-	@echo "... src/interfaces/altera_up_avalon_rs232.o"
-	@echo "... src/interfaces/altera_up_avalon_rs232.i"
-	@echo "... src/interfaces/altera_up_avalon_rs232.s"
+	@echo "... src/interfaces/hand.o"
+	@echo "... src/interfaces/hand.i"
+	@echo "... src/interfaces/hand.s"
 	@echo "... src/interfaces/i2c.o"
 	@echo "... src/interfaces/i2c.i"
 	@echo "... src/interfaces/i2c.s"
@@ -897,6 +837,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

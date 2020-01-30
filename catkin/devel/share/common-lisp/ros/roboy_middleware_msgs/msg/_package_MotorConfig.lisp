@@ -19,6 +19,4 @@
           DEADBAND
           SETPOINT-VAL
           SETPOINT
-          GEARBOXRATIO-VAL
-          GEARBOXRATIO
 ))

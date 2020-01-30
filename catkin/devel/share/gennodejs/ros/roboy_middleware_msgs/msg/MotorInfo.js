@@ -29,7 +29,7 @@ class MotorInfo {
       this.pwm = null;
       this.communication_quality = null;
       this.error_code = null;
-      this.gearBoxRatio = null;
+      this.neopixelColor = null;
     }
     else {
       if (initObj.hasOwnProperty('setpoint')) {
@@ -98,11 +98,11 @@ class MotorInfo {
       else {
         this.error_code = [];
       }
-      if (initObj.hasOwnProperty('gearBoxRatio')) {
-        this.gearBoxRatio = initObj.gearBoxRatio
+      if (initObj.hasOwnProperty('neopixelColor')) {
+        this.neopixelColor = initObj.neopixelColor
       }
       else {
-        this.gearBoxRatio = [];
+        this.neopixelColor = [];
       }
     }
   }
@@ -131,8 +131,8 @@ class MotorInfo {
     bufferOffset = _arraySerializer.int32(obj.communication_quality, buffer, bufferOffset, null);
     // Serialize message field [error_code]
     bufferOffset = _arraySerializer.int32(obj.error_code, buffer, bufferOffset, null);
-    // Serialize message field [gearBoxRatio]
-    bufferOffset = _arraySerializer.int32(obj.gearBoxRatio, buffer, bufferOffset, null);
+    // Serialize message field [neopixelColor]
+    bufferOffset = _arraySerializer.int32(obj.neopixelColor, buffer, bufferOffset, null);
     return bufferOffset;
   }
 
@@ -162,8 +162,8 @@ class MotorInfo {
     data.communication_quality = _arrayDeserializer.int32(buffer, bufferOffset, null)
     // Deserialize message field [error_code]
     data.error_code = _arrayDeserializer.int32(buffer, bufferOffset, null)
-    // Deserialize message field [gearBoxRatio]
-    data.gearBoxRatio = _arrayDeserializer.int32(buffer, bufferOffset, null)
+    // Deserialize message field [neopixelColor]
+    data.neopixelColor = _arrayDeserializer.int32(buffer, bufferOffset, null)
     return data;
   }
 
@@ -180,7 +180,7 @@ class MotorInfo {
     length += 4 * object.pwm.length;
     length += 4 * object.communication_quality.length;
     length += 4 * object.error_code.length;
-    length += 4 * object.gearBoxRatio.length;
+    length += 4 * object.neopixelColor.length;
     return length + 48;
   }
 
@@ -191,7 +191,7 @@ class MotorInfo {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'efed6a40bd0150d07743fdfc5f7f955c';
+    return '1504e08ef7bdc51358f095019de21feb';
   }
 
   static messageDefinition() {
@@ -208,7 +208,7 @@ class MotorInfo {
     int32[] pwm
     int32[] communication_quality
     int32[] error_code
-    int32[] gearBoxRatio
+    int32[] neopixelColor
     `;
   }
 
@@ -295,11 +295,11 @@ class MotorInfo {
       resolved.error_code = []
     }
 
-    if (msg.gearBoxRatio !== undefined) {
-      resolved.gearBoxRatio = msg.gearBoxRatio;
+    if (msg.neopixelColor !== undefined) {
+      resolved.neopixelColor = msg.neopixelColor;
     }
     else {
-      resolved.gearBoxRatio = []
+      resolved.neopixelColor = []
     }
 
     return resolved;

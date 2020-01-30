@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include/common_utilities/CommonDefinitions.h
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include/common_utilities/CommonDefinitions.h
 stdint.h
 -
 map
@@ -14,7 +14,7 @@ map
 vector
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include/common_utilities/MotorConfig.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include/common_utilities/MotorConfig.hpp
 ros/ros.h
 -
 map
@@ -30,11 +30,11 @@ sys/stat.h
 unistd.h
 -
 CommonDefinitions.h
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include/common_utilities/CommonDefinitions.h
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include/common_utilities/CommonDefinitions.h
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/MotorConfig.cpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/MotorConfig.cpp
 common_utilities/MotorConfig.hpp
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/common_utilities/MotorConfig.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/common_utilities/MotorConfig.hpp
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

@@ -14,7 +14,7 @@
 
 (defclass roboy_middleware_msgs::MotorConfig
   :super ros::object
-  :slots (_update_frequency _motor _control_mode _PWMLimit _IntegralLimit _Kp _Ki _Kd _deadband _setpoint _gearBoxRatio ))
+  :slots (_update_frequency _motor _control_mode _PWMLimit _IntegralLimit _Kp _Ki _Kd _deadband _setpoint ))
 
 (defmethod roboy_middleware_msgs::MotorConfig
   (:init
@@ -29,7 +29,6 @@
     ((:Kd __Kd) (make-array 0 :initial-element 0 :element-type :integer))
     ((:deadband __deadband) (make-array 0 :initial-element 0 :element-type :integer))
     ((:setpoint __setpoint) (make-array 0 :initial-element 0 :element-type :integer))
-    ((:gearBoxRatio __gearBoxRatio) (make-array 0 :initial-element 0 :element-type :integer))
     )
    (send-super :init)
    (setq _update_frequency __update_frequency)
@@ -42,7 +41,6 @@
    (setq _Kd __Kd)
    (setq _deadband __deadband)
    (setq _setpoint __setpoint)
-   (setq _gearBoxRatio __gearBoxRatio)
    self)
   (:update_frequency
    (&optional __update_frequency)
@@ -74,9 +72,6 @@
   (:setpoint
    (&optional __setpoint)
    (if __setpoint (setq _setpoint __setpoint)) _setpoint)
-  (:gearBoxRatio
-   (&optional __gearBoxRatio)
-   (if __gearBoxRatio (setq _gearBoxRatio __gearBoxRatio)) _gearBoxRatio)
   (:serialization-length
    ()
    (+
@@ -100,8 +95,6 @@
     (* 4    (length _deadband)) 4
     ;; int32[] _setpoint
     (* 4    (length _setpoint)) 4
-    ;; int32[] _gearBoxRatio
-    (* 4    (length _gearBoxRatio)) 4
     ))
   (:serialize
    (&optional strm)
@@ -152,11 +145,6 @@
      (write-long (length _setpoint) s)
      (dotimes (i (length _setpoint))
        (write-long (elt _setpoint i) s)
-       )
-     ;; int32[] _gearBoxRatio
-     (write-long (length _gearBoxRatio) s)
-     (dotimes (i (length _gearBoxRatio))
-       (write-long (elt _gearBoxRatio i) s)
        )
      ;;
      (if (null strm) (get-output-stream-string s))))
@@ -226,18 +214,11 @@
      (dotimes (i n)
      (setf (elt _setpoint i) (sys::peek buf ptr- :integer)) (incf ptr- 4)
      ))
-   ;; int32[] _gearBoxRatio
-   (let (n)
-     (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4)
-     (setq _gearBoxRatio (instantiate integer-vector n))
-     (dotimes (i n)
-     (setf (elt _gearBoxRatio i) (sys::peek buf ptr- :integer)) (incf ptr- 4)
-     ))
    ;;
    self)
   )
 
-(setf (get roboy_middleware_msgs::MotorConfig :md5sum-) "e8035a85d6754846f143f80bcf9f5f79")
+(setf (get roboy_middleware_msgs::MotorConfig :md5sum-) "dea90ac772f67b4803331b153304163f")
 (setf (get roboy_middleware_msgs::MotorConfig :datatype-) "roboy_middleware_msgs/MotorConfig")
 (setf (get roboy_middleware_msgs::MotorConfig :definition-)
       "int32[] update_frequency
@@ -250,11 +231,10 @@ int32[] Ki
 int32[] Kd
 int32[] deadband
 int32[] setpoint
-int32[] gearBoxRatio
 ")
 
 
 
-(provide :roboy_middleware_msgs/MotorConfig "e8035a85d6754846f143f80bcf9f5f79")
+(provide :roboy_middleware_msgs/MotorConfig "dea90ac772f67b4803331b153304163f")
 
 

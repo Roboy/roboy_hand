@@ -1,8 +1,8 @@
-prefix=/home/sausy/Projects/Hand_openBionic/catkin/devel
+prefix=/home/sausy/Projects/roboy_hand/catkin/devel
 
 Name: roboy_plexus
 Description: Description of roboy_plexus
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/sausy/Projects/Hand_openBionic/catkin/devel/lib 
+Libs: -L/home/sausy/Projects/roboy_hand/catkin/devel/lib 
 Requires: message_runtime roboy_middleware_msgs roboy_control_msgs common_utilities

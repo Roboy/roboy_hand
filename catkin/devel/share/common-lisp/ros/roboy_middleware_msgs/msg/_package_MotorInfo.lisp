@@ -21,6 +21,6 @@
           COMMUNICATION_QUALITY
           ERROR_CODE-VAL
           ERROR_CODE
-          GEARBOXRATIO-VAL
-          GEARBOXRATIO
+          NEOPIXELCOLOR-VAL
+          NEOPIXELCOLOR
 ))

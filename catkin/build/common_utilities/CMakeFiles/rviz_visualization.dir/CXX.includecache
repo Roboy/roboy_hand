@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include/common_utilities/rviz_visualization.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include/common_utilities/rviz_visualization.hpp
 ros/ros.h
 -
 ros/package.h
@@ -38,9 +38,9 @@ string
 sys/stat.h
 -
 
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/rviz_visualization.cpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/rviz_visualization.cpp
 common_utilities/rviz_visualization.hpp
-/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/src/common_utilities/rviz_visualization.hpp
+/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/src/common_utilities/rviz_visualization.hpp
 
 /opt/ros/melodic/include/boost_161_condition_variable.h
 boost/thread/detail/platform.hpp

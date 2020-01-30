@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.pdb"
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libroboy_control_center.so"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.pdb"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/libroboy_control_center.so"
   "CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_icebus.cpp.o"
   "CMakeFiles/roboy_control_center.dir/include/roboy_control_center/moc_roboy_control_center.cpp.o"
   "CMakeFiles/roboy_control_center.dir/qcustomplot/moc_qcustomplot.cpp.o"

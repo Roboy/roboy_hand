@@ -35,7 +35,7 @@ struct MotorInfo_
     , pwm()
     , communication_quality()
     , error_code()
-    , gearBoxRatio()  {
+    , neopixelColor()  {
     }
   MotorInfo_(const ContainerAllocator& _alloc)
     : setpoint(_alloc)
@@ -49,7 +49,7 @@ struct MotorInfo_
     , pwm(_alloc)
     , communication_quality(_alloc)
     , error_code(_alloc)
-    , gearBoxRatio(_alloc)  {
+    , neopixelColor(_alloc)  {
   (void)_alloc;
     }
 
@@ -88,8 +88,8 @@ struct MotorInfo_
    typedef std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other >  _error_code_type;
   _error_code_type error_code;
 
-   typedef std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other >  _gearBoxRatio_type;
-  _gearBoxRatio_type gearBoxRatio;
+   typedef std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other >  _neopixelColor_type;
+  _neopixelColor_type neopixelColor;
 
 
 
@@ -126,7 +126,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg'], 'roboy_middleware_msgs': ['/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_communication/roboy_middleware_msgs/msg'], 'geometry_msgs': ['/opt/ros/melodic/share/geometry_msgs/cmake/../msg']}
+// {'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg'], 'roboy_middleware_msgs': ['/home/sausy/Projects/roboy_hand/catkin/src/roboy_communication/roboy_middleware_msgs/msg'], 'geometry_msgs': ['/opt/ros/melodic/share/geometry_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -169,12 +169,12 @@ struct MD5Sum< ::roboy_middleware_msgs::MotorInfo_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "efed6a40bd0150d07743fdfc5f7f955c";
+    return "1504e08ef7bdc51358f095019de21feb";
   }
 
   static const char* value(const ::roboy_middleware_msgs::MotorInfo_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xefed6a40bd0150d0ULL;
-  static const uint64_t static_value2 = 0x7743fdfc5f7f955cULL;
+  static const uint64_t static_value1 = 0x1504e08ef7bdc513ULL;
+  static const uint64_t static_value2 = 0x58f095019de21febULL;
 };
 
 template<class ContainerAllocator>
@@ -204,7 +204,7 @@ struct Definition< ::roboy_middleware_msgs::MotorInfo_<ContainerAllocator> >
 "int32[] pwm\n"
 "int32[] communication_quality\n"
 "int32[] error_code\n"
-"int32[] gearBoxRatio\n"
+"int32[] neopixelColor\n"
 ;
   }
 
@@ -234,7 +234,7 @@ namespace serialization
       stream.next(m.pwm);
       stream.next(m.communication_quality);
       stream.next(m.error_code);
-      stream.next(m.gearBoxRatio);
+      stream.next(m.neopixelColor);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -319,11 +319,11 @@ struct Printer< ::roboy_middleware_msgs::MotorInfo_<ContainerAllocator> >
       s << indent << "  error_code[" << i << "]: ";
       Printer<int32_t>::stream(s, indent + "  ", v.error_code[i]);
     }
-    s << indent << "gearBoxRatio[]" << std::endl;
-    for (size_t i = 0; i < v.gearBoxRatio.size(); ++i)
+    s << indent << "neopixelColor[]" << std::endl;
+    for (size_t i = 0; i < v.neopixelColor.size(); ++i)
     {
-      s << indent << "  gearBoxRatio[" << i << "]: ";
-      Printer<int32_t>::stream(s, indent + "  ", v.gearBoxRatio[i]);
+      s << indent << "  neopixelColor[" << i << "]: ";
+      Printer<int32_t>::stream(s, indent + "  ", v.neopixelColor[i]);
     }
   }
 };

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libMotorConfig.pdb"
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/libMotorConfig.so"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/libMotorConfig.pdb"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/libMotorConfig.so"
   "CMakeFiles/MotorConfig.dir/src/MotorConfig.cpp.o"
 )
 

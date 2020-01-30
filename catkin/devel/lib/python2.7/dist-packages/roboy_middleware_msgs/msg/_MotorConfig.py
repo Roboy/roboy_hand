@@ -7,7 +7,7 @@ import struct
 
 
 class MotorConfig(genpy.Message):
-  _md5sum = "e8035a85d6754846f143f80bcf9f5f79"
+  _md5sum = "dea90ac772f67b4803331b153304163f"
   _type = "roboy_middleware_msgs/MotorConfig"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """int32[] update_frequency
@@ -19,10 +19,9 @@ int32[] Kp
 int32[] Ki
 int32[] Kd
 int32[] deadband
-int32[] setpoint
-int32[] gearBoxRatio"""
-  __slots__ = ['update_frequency','motor','control_mode','PWMLimit','IntegralLimit','Kp','Ki','Kd','deadband','setpoint','gearBoxRatio']
-  _slot_types = ['int32[]','uint8[]','uint8[]','int32[]','int32[]','int32[]','int32[]','int32[]','int32[]','int32[]','int32[]']
+int32[] setpoint"""
+  __slots__ = ['update_frequency','motor','control_mode','PWMLimit','IntegralLimit','Kp','Ki','Kd','deadband','setpoint']
+  _slot_types = ['int32[]','uint8[]','uint8[]','int32[]','int32[]','int32[]','int32[]','int32[]','int32[]','int32[]']
 
   def __init__(self, *args, **kwds):
     """
@@ -32,7 +31,7 @@ int32[] gearBoxRatio"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       update_frequency,motor,control_mode,PWMLimit,IntegralLimit,Kp,Ki,Kd,deadband,setpoint,gearBoxRatio
+       update_frequency,motor,control_mode,PWMLimit,IntegralLimit,Kp,Ki,Kd,deadband,setpoint
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -61,8 +60,6 @@ int32[] gearBoxRatio"""
         self.deadband = []
       if self.setpoint is None:
         self.setpoint = []
-      if self.gearBoxRatio is None:
-        self.gearBoxRatio = []
     else:
       self.update_frequency = []
       self.motor = b''
@@ -74,7 +71,6 @@ int32[] gearBoxRatio"""
       self.Kd = []
       self.deadband = []
       self.setpoint = []
-      self.gearBoxRatio = []
 
   def _get_types(self):
     """
@@ -134,10 +130,6 @@ int32[] gearBoxRatio"""
       buff.write(_struct_I.pack(length))
       pattern = '<%si'%length
       buff.write(struct.pack(pattern, *self.setpoint))
-      length = len(self.gearBoxRatio)
-      buff.write(_struct_I.pack(length))
-      pattern = '<%si'%length
-      buff.write(struct.pack(pattern, *self.gearBoxRatio))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -216,13 +208,6 @@ int32[] gearBoxRatio"""
       start = end
       end += struct.calcsize(pattern)
       self.setpoint = struct.unpack(pattern, str[start:end])
-      start = end
-      end += 4
-      (length,) = _struct_I.unpack(str[start:end])
-      pattern = '<%si'%length
-      start = end
-      end += struct.calcsize(pattern)
-      self.gearBoxRatio = struct.unpack(pattern, str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -281,10 +266,6 @@ int32[] gearBoxRatio"""
       buff.write(_struct_I.pack(length))
       pattern = '<%si'%length
       buff.write(self.setpoint.tostring())
-      length = len(self.gearBoxRatio)
-      buff.write(_struct_I.pack(length))
-      pattern = '<%si'%length
-      buff.write(self.gearBoxRatio.tostring())
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -364,13 +345,6 @@ int32[] gearBoxRatio"""
       start = end
       end += struct.calcsize(pattern)
       self.setpoint = numpy.frombuffer(str[start:end], dtype=numpy.int32, count=length)
-      start = end
-      end += 4
-      (length,) = _struct_I.unpack(str[start:end])
-      pattern = '<%si'%length
-      start = end
-      end += struct.calcsize(pattern)
-      self.gearBoxRatio = numpy.frombuffer(str[start:end], dtype=numpy.int32, count=length)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill

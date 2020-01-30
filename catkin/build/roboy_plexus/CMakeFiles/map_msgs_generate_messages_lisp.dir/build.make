@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sausy/Projects/Hand_openBionic/catkin/src
+CMAKE_SOURCE_DIR = /home/sausy/Projects/roboy_hand/catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sausy/Projects/Hand_openBionic/catkin/build
+CMAKE_BINARY_DIR = /home/sausy/Projects/roboy_hand/catkin/build
 
 # Utility rule file for map_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/build: map_msgs_gene
 .PHONY : roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
 
 roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus && $(CMAKE_COMMAND) -P CMakeFiles/map_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus && $(CMAKE_COMMAND) -P CMakeFiles/map_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/clean
 
 roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/depend:
-	cd /home/sausy/Projects/Hand_openBionic/catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sausy/Projects/Hand_openBionic/catkin/src /home/sausy/Projects/Hand_openBionic/catkin/src/roboy_plexus /home/sausy/Projects/Hand_openBionic/catkin/build /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus /home/sausy/Projects/Hand_openBionic/catkin/build/roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sausy/Projects/roboy_hand/catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sausy/Projects/roboy_hand/catkin/src /home/sausy/Projects/roboy_hand/catkin/src/roboy_plexus /home/sausy/Projects/roboy_hand/catkin/build /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus /home/sausy/Projects/roboy_hand/catkin/build/roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : roboy_plexus/CMakeFiles/map_msgs_generate_messages_lisp.dir/depend
 

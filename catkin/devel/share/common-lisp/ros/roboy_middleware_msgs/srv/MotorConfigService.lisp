@@ -55,16 +55,16 @@
   "roboy_middleware_msgs/MotorConfigServiceRequest")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<MotorConfigService-request>)))
   "Returns md5sum for a message object of type '<MotorConfigService-request>"
-  "8df6eb3cbde11d4d87f65fb1d6cc6683")
+  "f3e5954366fdfb6276cebb1b78c6e830")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'MotorConfigService-request)))
   "Returns md5sum for a message object of type 'MotorConfigService-request"
-  "8df6eb3cbde11d4d87f65fb1d6cc6683")
+  "f3e5954366fdfb6276cebb1b78c6e830")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<MotorConfigService-request>)))
   "Returns full string definition for message of type '<MotorConfigService-request>"
-  (cl:format cl:nil "bool legacy~%MotorConfig config~%~%================================================================================~%MSG: roboy_middleware_msgs/MotorConfig~%int32[] update_frequency~%uint8[] motor~%uint8[] control_mode~%int32[] PWMLimit~%int32[] IntegralLimit~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] setpoint~%int32[] gearBoxRatio~%~%"))
+  (cl:format cl:nil "bool legacy~%MotorConfig config~%~%================================================================================~%MSG: roboy_middleware_msgs/MotorConfig~%int32[] update_frequency~%uint8[] motor~%uint8[] control_mode~%int32[] PWMLimit~%int32[] IntegralLimit~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] setpoint~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'MotorConfigService-request)))
   "Returns full string definition for message of type 'MotorConfigService-request"
-  (cl:format cl:nil "bool legacy~%MotorConfig config~%~%================================================================================~%MSG: roboy_middleware_msgs/MotorConfig~%int32[] update_frequency~%uint8[] motor~%uint8[] control_mode~%int32[] PWMLimit~%int32[] IntegralLimit~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] setpoint~%int32[] gearBoxRatio~%~%"))
+  (cl:format cl:nil "bool legacy~%MotorConfig config~%~%================================================================================~%MSG: roboy_middleware_msgs/MotorConfig~%int32[] update_frequency~%uint8[] motor~%uint8[] control_mode~%int32[] PWMLimit~%int32[] IntegralLimit~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] setpoint~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <MotorConfigService-request>))
   (cl:+ 0
      1
@@ -139,10 +139,10 @@
   "roboy_middleware_msgs/MotorConfigServiceResponse")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<MotorConfigService-response>)))
   "Returns md5sum for a message object of type '<MotorConfigService-response>"
-  "8df6eb3cbde11d4d87f65fb1d6cc6683")
+  "f3e5954366fdfb6276cebb1b78c6e830")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'MotorConfigService-response)))
   "Returns md5sum for a message object of type 'MotorConfigService-response"
-  "8df6eb3cbde11d4d87f65fb1d6cc6683")
+  "f3e5954366fdfb6276cebb1b78c6e830")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<MotorConfigService-response>)))
   "Returns full string definition for message of type '<MotorConfigService-response>"
   (cl:format cl:nil "int32[] mode~%~%~%~%"))

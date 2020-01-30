@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sausy/Projects/Hand_openBionic/catkin/install")
+  set(CMAKE_INSTALL_PREFIX "/home/sausy/Projects/roboy_hand/catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/sausy/Projects/Hand_openBionic/catkin/build/gtest/googlemock/gtest/cmake_install.cmake")
+  include("/home/sausy/Projects/roboy_hand/catkin/build/gtest/googlemock/gtest/cmake_install.cmake")
 
 endif()
 

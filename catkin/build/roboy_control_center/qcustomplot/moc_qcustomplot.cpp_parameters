@@ -1,10 +1,10 @@
--I/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/include
--I/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/qcustomplot
--I/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/include
--I/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/include/roboy_control_center
--I/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/..
--I/home/sausy/Projects/Hand_openBionic/catkin/devel/include
--I/home/sausy/Projects/Hand_openBionic/catkin/src/common_utilities/include
+-I/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/include
+-I/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/qcustomplot
+-I/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/include
+-I/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/include/roboy_control_center
+-I/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/..
+-I/home/sausy/Projects/roboy_hand/catkin/devel/include
+-I/home/sausy/Projects/roboy_hand/catkin/src/common_utilities/include
 -I/opt/ros/melodic/include
 -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
 -I/usr/include
@@ -14,5 +14,5 @@
 -DROS_PACKAGE_NAME="roboy_control_center"
 -DROSCONSOLE_BACKEND_LOG4CXX
 -o
-/home/sausy/Projects/Hand_openBionic/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp
-/home/sausy/Projects/Hand_openBionic/catkin/src/roboy_control_center/qcustomplot/qcustomplot.h
+/home/sausy/Projects/roboy_hand/catkin/build/roboy_control_center/qcustomplot/moc_qcustomplot.cpp
+/home/sausy/Projects/roboy_hand/catkin/src/roboy_control_center/qcustomplot/qcustomplot.h

@@ -7,7 +7,7 @@ import struct
 
 
 class MotorInfo(genpy.Message):
-  _md5sum = "efed6a40bd0150d07743fdfc5f7f955c"
+  _md5sum = "1504e08ef7bdc51358f095019de21feb"
   _type = "roboy_middleware_msgs/MotorInfo"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """int32[] setpoint
@@ -21,8 +21,8 @@ int32[] PWMLimit
 int32[] pwm
 int32[] communication_quality
 int32[] error_code
-int32[] gearBoxRatio"""
-  __slots__ = ['setpoint','control_mode','Kp','Ki','Kd','deadband','IntegralLimit','PWMLimit','pwm','communication_quality','error_code','gearBoxRatio']
+int32[] neopixelColor"""
+  __slots__ = ['setpoint','control_mode','Kp','Ki','Kd','deadband','IntegralLimit','PWMLimit','pwm','communication_quality','error_code','neopixelColor']
   _slot_types = ['int32[]','uint8[]','int32[]','int32[]','int32[]','int32[]','int32[]','int32[]','int32[]','int32[]','int32[]','int32[]']
 
   def __init__(self, *args, **kwds):
@@ -33,7 +33,7 @@ int32[] gearBoxRatio"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       setpoint,control_mode,Kp,Ki,Kd,deadband,IntegralLimit,PWMLimit,pwm,communication_quality,error_code,gearBoxRatio
+       setpoint,control_mode,Kp,Ki,Kd,deadband,IntegralLimit,PWMLimit,pwm,communication_quality,error_code,neopixelColor
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -64,8 +64,8 @@ int32[] gearBoxRatio"""
         self.communication_quality = []
       if self.error_code is None:
         self.error_code = []
-      if self.gearBoxRatio is None:
-        self.gearBoxRatio = []
+      if self.neopixelColor is None:
+        self.neopixelColor = []
     else:
       self.setpoint = []
       self.control_mode = b''
@@ -78,7 +78,7 @@ int32[] gearBoxRatio"""
       self.pwm = []
       self.communication_quality = []
       self.error_code = []
-      self.gearBoxRatio = []
+      self.neopixelColor = []
 
   def _get_types(self):
     """
@@ -139,10 +139,10 @@ int32[] gearBoxRatio"""
       buff.write(_struct_I.pack(length))
       pattern = '<%si'%length
       buff.write(struct.pack(pattern, *self.error_code))
-      length = len(self.gearBoxRatio)
+      length = len(self.neopixelColor)
       buff.write(_struct_I.pack(length))
       pattern = '<%si'%length
-      buff.write(struct.pack(pattern, *self.gearBoxRatio))
+      buff.write(struct.pack(pattern, *self.neopixelColor))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -235,7 +235,7 @@ int32[] gearBoxRatio"""
       pattern = '<%si'%length
       start = end
       end += struct.calcsize(pattern)
-      self.gearBoxRatio = struct.unpack(pattern, str[start:end])
+      self.neopixelColor = struct.unpack(pattern, str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -295,10 +295,10 @@ int32[] gearBoxRatio"""
       buff.write(_struct_I.pack(length))
       pattern = '<%si'%length
       buff.write(self.error_code.tostring())
-      length = len(self.gearBoxRatio)
+      length = len(self.neopixelColor)
       buff.write(_struct_I.pack(length))
       pattern = '<%si'%length
-      buff.write(self.gearBoxRatio.tostring())
+      buff.write(self.neopixelColor.tostring())
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -392,7 +392,7 @@ int32[] gearBoxRatio"""
       pattern = '<%si'%length
       start = end
       end += struct.calcsize(pattern)
-      self.gearBoxRatio = numpy.frombuffer(str[start:end], dtype=numpy.int32, count=length)
+      self.neopixelColor = numpy.frombuffer(str[start:end], dtype=numpy.int32, count=length)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill

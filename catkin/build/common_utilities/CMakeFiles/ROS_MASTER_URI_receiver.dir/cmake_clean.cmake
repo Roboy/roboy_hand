@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/common_utilities/ROS_MASTER_URI_receiver"
-  "/home/sausy/Projects/Hand_openBionic/catkin/devel/lib/common_utilities/ROS_MASTER_URI_receiver.pdb"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/common_utilities/ROS_MASTER_URI_receiver"
+  "/home/sausy/Projects/roboy_hand/catkin/devel/lib/common_utilities/ROS_MASTER_URI_receiver.pdb"
   "CMakeFiles/ROS_MASTER_URI_receiver.dir/src/ROS_MASTER_URI_receiver.cpp.o"
 )
 

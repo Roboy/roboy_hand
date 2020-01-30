@@ -56,11 +56,6 @@
     :reader setpoint
     :initarg :setpoint
     :type (cl:vector cl:integer)
-   :initform (cl:make-array 0 :element-type 'cl:integer :initial-element 0))
-   (gearBoxRatio
-    :reader gearBoxRatio
-    :initarg :gearBoxRatio
-    :type (cl:vector cl:integer)
    :initform (cl:make-array 0 :element-type 'cl:integer :initial-element 0)))
 )
 
@@ -121,11 +116,6 @@
 (cl:defmethod setpoint-val ((m <MotorConfig>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader roboy_middleware_msgs-msg:setpoint-val is deprecated.  Use roboy_middleware_msgs-msg:setpoint instead.")
   (setpoint m))
-
-(cl:ensure-generic-function 'gearBoxRatio-val :lambda-list '(m))
-(cl:defmethod gearBoxRatio-val ((m <MotorConfig>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader roboy_middleware_msgs-msg:gearBoxRatio-val is deprecated.  Use roboy_middleware_msgs-msg:gearBoxRatio instead.")
-  (gearBoxRatio m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <MotorConfig>) ostream)
   "Serializes a message object of type '<MotorConfig>"
   (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'update_frequency))))
@@ -238,18 +228,6 @@
     (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
     ))
    (cl:slot-value msg 'setpoint))
-  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'gearBoxRatio))))
-    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_arr_len) ostream))
-  (cl:map cl:nil #'(cl:lambda (ele) (cl:let* ((signed ele) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
-    (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
-    ))
-   (cl:slot-value msg 'gearBoxRatio))
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <MotorConfig>) istream)
   "Deserializes a message object of type '<MotorConfig>"
@@ -383,20 +361,6 @@
       (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
       (cl:setf (cl:aref vals i) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296)))))))
-  (cl:let ((__ros_arr_len 0))
-    (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
-    (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
-    (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
-    (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
-  (cl:setf (cl:slot-value msg 'gearBoxRatio) (cl:make-array __ros_arr_len))
-  (cl:let ((vals (cl:slot-value msg 'gearBoxRatio)))
-    (cl:dotimes (i __ros_arr_len)
-    (cl:let ((unsigned 0))
-      (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:aref vals i) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296)))))))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<MotorConfig>)))
@@ -407,16 +371,16 @@
   "roboy_middleware_msgs/MotorConfig")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<MotorConfig>)))
   "Returns md5sum for a message object of type '<MotorConfig>"
-  "e8035a85d6754846f143f80bcf9f5f79")
+  "dea90ac772f67b4803331b153304163f")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'MotorConfig)))
   "Returns md5sum for a message object of type 'MotorConfig"
-  "e8035a85d6754846f143f80bcf9f5f79")
+  "dea90ac772f67b4803331b153304163f")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<MotorConfig>)))
   "Returns full string definition for message of type '<MotorConfig>"
-  (cl:format cl:nil "int32[] update_frequency~%uint8[] motor~%uint8[] control_mode~%int32[] PWMLimit~%int32[] IntegralLimit~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] setpoint~%int32[] gearBoxRatio~%~%"))
+  (cl:format cl:nil "int32[] update_frequency~%uint8[] motor~%uint8[] control_mode~%int32[] PWMLimit~%int32[] IntegralLimit~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] setpoint~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'MotorConfig)))
   "Returns full string definition for message of type 'MotorConfig"
-  (cl:format cl:nil "int32[] update_frequency~%uint8[] motor~%uint8[] control_mode~%int32[] PWMLimit~%int32[] IntegralLimit~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] setpoint~%int32[] gearBoxRatio~%~%"))
+  (cl:format cl:nil "int32[] update_frequency~%uint8[] motor~%uint8[] control_mode~%int32[] PWMLimit~%int32[] IntegralLimit~%int32[] Kp~%int32[] Ki~%int32[] Kd~%int32[] deadband~%int32[] setpoint~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <MotorConfig>))
   (cl:+ 0
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'update_frequency) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
@@ -429,7 +393,6 @@
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'Kd) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'deadband) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'setpoint) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
-     4 (cl:reduce #'cl:+ (cl:slot-value msg 'gearBoxRatio) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <MotorConfig>))
   "Converts a ROS message object to a list"
@@ -444,5 +407,4 @@
     (cl:cons ':Kd (Kd msg))
     (cl:cons ':deadband (deadband msg))
     (cl:cons ':setpoint (setpoint msg))
-    (cl:cons ':gearBoxRatio (gearBoxRatio msg))
 ))
