@@ -2,14 +2,13 @@ Flashing with SWD via raspberry pi with openocd
 
 
 ##  Default RPI-2 B settings
-ip: 192.168.1.10
+ip: 192.168.0.106
 
 user: pi
 pw: Roboy2016
 
 ##  access RPI
-sudo ifconfig enx00e04c6836b1 192.168.1.1 netmask 255.255.255.0 up
-ssh -b 192.168.1.1  pi@192.168.1.10
+ssh pi@192.168.0.106
 
 # working dir:
 cd ~/Projekts/openocd/testing/samd21/
