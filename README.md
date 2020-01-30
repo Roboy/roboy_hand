@@ -1,17 +1,17 @@
 Flashing with SWD via raspberry pi with openocd 
 
 
-##Default RPI-2 B settings
+##  Default RPI-2 B settings
 ip: 192.168.1.10
 
 user: pi
 pw: Roboy2016
 
-##access RPI
+##  access RPI
 sudo ifconfig enx00e04c6836b1 192.168.1.1 netmask 255.255.255.0 up
 ssh -b 192.168.1.1  pi@192.168.1.10
 
-#working dir:
+# working dir:
 cd ~/Projekts/openocd/testing/samd21/
 
 
@@ -19,7 +19,7 @@ At91samd was programmed via openocd with an raspberry pi (https://iosoft.blog/20
 
 config file 
 
-##Pin header chestNut-PCB
+##  Pin header chestNut-PCB
 1	VCC +3.3V
 2	SWDIO
 3	SWCLK
