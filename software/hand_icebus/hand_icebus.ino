@@ -46,7 +46,7 @@ void setup()
   pinAssignment();
 
   //====== added additional uart to FPGA ===== 
-  Serial.begin(115200);
+  Serial.begin(38400);
   SerialUSB.println("hand ready");
 
   delay(1500);
@@ -55,31 +55,31 @@ void setup()
 void loop()
 { 
   uint32_t header = icebus.Listen(128);
-  switch(header){
-    case 0xABADBABE: { // hand_status_request
-      for(int i=0;i<NUM_FINGERS;i++){
-        icebus.pos[i] = finger[i].readPos();
-        icebus.current[i] = finger[i].readCurrent();
-      }
-      icebus.SendHandStatusResponse(128);
-      break;
-    }
-    case 0xB105F00D: { // hand_command
-      for(int i=0;i<NUM_FINGERS;i++){
-        finger[i].writePos(icebus.setpoint[i]);
-      }
-      pixel.setPixelColor(0, pixel.Color((icebus.neopixel_color>>16)&0xff, (icebus.neopixel_color>>8)&0xff, icebus.neopixel_color&0xff));
-      pixel.show();
-      break;
-    }
-    case 0xB16B00B5: { //hand_control_mode
-     
-      break;
-    }
-    case 0x0B00B135: { //hand_status_response
-
-      break;
-    }
-    default: printf("header %x does not match",header);
-  }
+//  switch(header){
+//    case 0xABADBABE: { // hand_status_request
+//      for(int i=0;i<NUM_FINGERS;i++){
+//        icebus.pos[i] = finger[i].readPos();
+//        icebus.current[i] = finger[i].readCurrent();
+//      }
+//      icebus.SendHandStatusResponse(128);
+//      break;
+//    }
+//    case 0xB105F00D: { // hand_command
+//      for(int i=0;i<NUM_FINGERS;i++){
+//        finger[i].writePos(icebus.setpoint[i]);
+//      }
+//      pixel.setPixelColor(0, pixel.Color((icebus.neopixel_color>>16)&0xff, (icebus.neopixel_color>>8)&0xff, icebus.neopixel_color&0xff));
+//      pixel.show();
+//      break;
+//    }
+//    case 0xB16B00B5: { //hand_control_mode
+//     
+//      break;
+//    }
+//    case 0x0B00B135: { //hand_status_response
+//
+//      break;
+//    }
+//    default: printf("header %x does not match",header);
+//  }
 }

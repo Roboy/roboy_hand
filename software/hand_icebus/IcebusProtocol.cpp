@@ -98,7 +98,10 @@ void IcebusHost::SendHandCommand(int id){
   HandCommand msg;
   msg.values.header = 0x0DF005B1;
   msg.values.id = id;
-  msg.values.setpoint = 10;
+  msg.values.setpoint0 = 10;
+  msg.values.setpoint1 = 10;
+  msg.values.setpoint2 = 10;
+  msg.values.setpoint3 = 10;
   msg.values.neopxl_color = 10;
   msg.values.crc = gen_crc16(&msg.data[4],sizeof(msg)-4-2);
   SerialUSB.print("hand_command------------>\t");
@@ -190,11 +193,19 @@ int IcebusHost::Listen(int id){
         case 0xABADBABE: {
           SerialUSB.print("hand_status_request received for id ");
           SerialUSB.println(read_buf[4]);
+          SendHandStatusResponse(128);
           break;
         }
         case 0xB105F00D: {
           SerialUSB.print("hand_command received for id ");
           SerialUSB.println(read_buf[4]);
+          HandCommand msg;
+          memcpy(read_buf, msg.data, sizeof(msg));
+          setpoint[0] = msg.values.setpoint0;
+          setpoint[1] = msg.values.setpoint1;
+          setpoint[2] = msg.values.setpoint2;
+          setpoint[3] = msg.values.setpoint3;
+          neopixel_color = msg.values.neopxl_color;
           break;
         }
         case 0xB16B00B5: {
