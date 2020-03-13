@@ -48,7 +48,7 @@ void setup()
   // SerialUSB.print is used to allow compatability between both the Mega (Serial.print) 
   // and the Zero Native Port (SerialUSB.print), and is defined in FingerLib.h
   SerialUSB.begin(38400);
-  SerialUSB.println("Started");
+  SerialUSB.println("Started USB");
   
 
   // configure all of the finger pins
@@ -79,7 +79,7 @@ void setup()
 
 void loop()
 { 
-  //SerialUSB.println("Started");
+  //Serial.println("Started loop");
   //LED.setMode(LED_MODE_SOLID);
   //LED.setBrightness(10);
   //LED.setColour(255,0,0);
@@ -87,11 +87,12 @@ void loop()
   pixel.show();
 
    for (int i = 0; i < NUM_FINGERS; i++){
-      SerialUSB.print("F");
-      SerialUSB.print(i);
-      SerialUSB.print(" ");
-      SerialUSB.print(finger[i].readPos());
-      SerialUSB.print("\n");
+      Serial.print("F");
+      Serial.write(i);
+      Serial.print(" ");
+      Serial.write(finger[i].readPos());
+      //Serial.print("\n");
+      Serial.write(13);Serial.write(10);
    }
   
   pollSerial();
