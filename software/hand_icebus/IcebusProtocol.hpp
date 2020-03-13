@@ -6,6 +6,7 @@
  */
 #include <Arduino.h>
 #include <stdio.h>
+#include "Globals.h"
 typedef uint16_t crc;
 
 #define WIDTH  (8 * sizeof(crc))
@@ -104,11 +105,14 @@ union HandStatusResponse{
         uint32_t control_mode;
         uint32_t setpoint;
         uint32_t position;
-        uint32_t current;
+        uint16_t current0;
+        uint16_t current1;
+        uint16_t current2;
+        uint16_t current3;
         int32_t neopixel_color:24;
         uint16_t crc;
     }values = {.header = 0x35B1000B };
-    uint8_t data[22];
+    uint8_t data[26];
 };
 
 class IcebusHost{
@@ -122,7 +126,12 @@ public:
   void SendHandStatusResponse(int id);
   void SendHandCommand(int id);
   void SendHandControlMode(int id);
-  void Listen(int id);
+  int Listen(int id);
+  int8_t pos[NUM_FINGERS];
+  uint8_t control_mode[NUM_FINGERS];
+  uint16_t current[NUM_FINGERS];
+  int8_t setpoint[NUM_FINGERS];
+  uint32_t neopixel_color;
 private:
   crc  crcTable[256];
   void crcInit();
