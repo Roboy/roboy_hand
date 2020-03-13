@@ -1,0 +1,18 @@
+(module 101X14N330MV4T_X2Y_0603 (layer F.Cu) (tedit 0)
+  (fp_text reference U$10 (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_text value 101X14N330MV4T_X2Y_0603 (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_line (start 1 0.6) (end -1 0.6) (layer F.SilkS) (width 0.127))
+  (fp_line (start -1 0.6) (end -1 -0.6) (layer F.SilkS) (width 0.127))
+  (fp_line (start -1 -0.6) (end 1 -0.6) (layer F.SilkS) (width 0.127))
+  (fp_line (start 1 -0.6) (end 1 0.6) (layer F.SilkS) (width 0.127))
+  (pad G smd rect (at 0 0 90) (size 1 0.5) (layers F.Cu F.Paste F.Mask)
+    (solder_mask_margin 0.075))
+  (pad A smd rect (at -0.686 0 90) (size 1 0.45) (layers F.Cu F.Paste F.Mask)
+    (solder_mask_margin 0.075))
+  (pad B smd rect (at 0.686 0 90) (size 1 0.45) (layers F.Cu F.Paste F.Mask)
+    (solder_mask_margin 0.075))
+)

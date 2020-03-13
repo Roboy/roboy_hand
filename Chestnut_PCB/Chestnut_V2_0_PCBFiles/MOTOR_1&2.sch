@@ -1,0 +1,571 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 12095 8268
+encoding utf-8
+Sheet 6 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1400 2800 1400 2900
+Wire Wire Line
+	1400 2900 1400 3000
+Wire Wire Line
+	1800 2800 1800 2900
+Wire Wire Line
+	1800 2900 1400 2900
+Connection ~ 1400 2900
+Text GLabel 1400 2800 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	3800 3400 3600 3400
+Wire Wire Line
+	3600 3400 3600 3600
+Wire Wire Line
+	3600 3600 3600 3800
+Wire Wire Line
+	3800 3600 3600 3600
+Connection ~ 3600 3600
+Text GLabel 3800 3400 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	9100 4900 9100 4400
+Wire Wire Line
+	9100 4400 8500 4400
+Wire Wire Line
+	9100 2700 9100 4400
+Wire Wire Line
+	9100 2700 8600 2700
+Connection ~ 9100 4400
+Text GLabel 9100 4900 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	2100 3100 2100 3300
+Wire Wire Line
+	2100 3300 2100 3400
+Wire Wire Line
+	2300 3100 2300 3300
+Wire Wire Line
+	2300 3300 2100 3300
+Connection ~ 2100 3300
+Text GLabel 2100 3100 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	6950 3350 6950 3200
+Text GLabel 6950 3350 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	6950 5000 6950 5100
+Text GLabel 6950 5000 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	9900 3100 9900 2900
+Text GLabel 9900 3100 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	9900 4850 9900 4650
+Text GLabel 9900 4850 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	5600 1800 5600 1900
+Text GLabel 5600 1800 0    10   BiDi ~ 0
++12V
+Wire Wire Line
+	3800 2200 1400 2200
+Wire Wire Line
+	1400 2000 1400 2200
+Wire Wire Line
+	1400 2200 1400 2500
+Connection ~ 1400 2200
+Text GLabel 3800 2200 0    10   BiDi ~ 0
++12V
+Wire Wire Line
+	3800 2800 3200 2800
+Text GLabel 3200 2800 0    70   BiDi ~ 0
+MOTOR1_OPEN
+Wire Wire Line
+	3800 3000 3200 3000
+Text GLabel 3200 3000 0    70   BiDi ~ 0
+MOTOR2_OPEN
+Wire Wire Line
+	3800 2900 3200 2900
+Text GLabel 3200 2900 0    70   BiDi ~ 0
+MOTOR1_CLOSE
+Wire Wire Line
+	3800 3100 3200 3100
+Text GLabel 3200 3100 0    70   BiDi ~ 0
+MOTOR2_CLOSE
+Wire Wire Line
+	3800 3200 3600 3200
+Wire Wire Line
+	3600 3200 3600 2100
+Wire Wire Line
+	5200 2200 5600 2200
+Wire Wire Line
+	3800 2300 1800 2300
+Wire Wire Line
+	1800 2300 1800 2500
+Wire Wire Line
+	5200 2600 5800 2600
+Wire Wire Line
+	5800 2600 5800 2100
+Wire Wire Line
+	5800 2100 6450 2100
+Wire Wire Line
+	6450 2100 7100 2100
+Wire Wire Line
+	7100 2100 7100 2600
+Wire Wire Line
+	7100 2600 7200 2600
+Wire Wire Line
+	6450 2100 6450 2150
+Connection ~ 6450 2100
+Wire Wire Line
+	5200 2900 5800 2900
+Wire Wire Line
+	5800 2900 5800 3100
+Wire Wire Line
+	5800 3100 6450 3100
+Wire Wire Line
+	6450 3100 7100 3100
+Wire Wire Line
+	7100 3100 7100 2700
+Wire Wire Line
+	7100 2700 7200 2700
+Wire Wire Line
+	6450 3050 6450 3100
+Connection ~ 6450 3100
+Wire Wire Line
+	5200 2700 5400 2700
+Wire Wire Line
+	5400 2700 5400 4900
+Wire Wire Line
+	5400 4900 6450 4900
+Wire Wire Line
+	6450 4900 7050 4900
+Wire Wire Line
+	7050 4900 7050 4400
+Wire Wire Line
+	7050 4400 7100 4400
+Wire Wire Line
+	6450 4850 6450 4900
+Connection ~ 6450 4900
+Wire Wire Line
+	5200 3000 5300 3000
+Wire Wire Line
+	5300 3000 5300 3900
+Wire Wire Line
+	7100 4300 7050 4300
+Wire Wire Line
+	7050 4300 7050 3900
+Wire Wire Line
+	7050 3900 6450 3900
+Wire Wire Line
+	6450 3900 5300 3900
+Wire Wire Line
+	6450 3950 6450 3900
+Connection ~ 6450 3900
+Wire Wire Line
+	8600 2500 9900 2500
+Wire Wire Line
+	9900 2500 10250 2500
+Wire Wire Line
+	9900 2600 9900 2500
+Text GLabel 10250 2500 2    70   BiDi ~ 0
+MOTOR1_SENSE
+Connection ~ 9900 2500
+Wire Wire Line
+	8500 4200 9900 4200
+Wire Wire Line
+	9900 4200 10250 4200
+Wire Wire Line
+	9900 4350 9900 4200
+Text GLabel 10250 4200 2    70   BiDi ~ 0
+MOTOR2_SENSE
+Connection ~ 9900 4200
+Wire Wire Line
+	3600 1600 3600 1700
+Text GLabel 3600 1600 0    10   BiDi ~ 0
++3V3
+Wire Wire Line
+	8800 4300 8800 2600
+Wire Wire Line
+	8800 2600 8800 1300
+Wire Wire Line
+	8800 4300 8500 4300
+Wire Wire Line
+	8600 2600 8800 2600
+Connection ~ 8800 2600
+Text GLabel 8800 4300 0    10   BiDi ~ 0
++3V3
+Wire Wire Line
+	3800 2600 2300 2600
+Wire Wire Line
+	2300 2600 2300 2700
+Text GLabel 2350 2600 2    66   BiDi ~ 0
+M2-ISENSE
+Wire Wire Line
+	3800 2500 2100 2500
+Wire Wire Line
+	2100 2500 2100 2700
+Text GLabel 2250 2500 2    66   BiDi ~ 0
+M1-ISENSE
+$Comp
+L Chestnut_V2.0-eagle-import:+12V #P+6
+U 1 1 B0F39303
+P 1400 1900
+AR Path="/B0F39303" Ref="#P+6"  Part="1" 
+AR Path="/5DFB8953/B0F39303" Ref="#P+06"  Part="1" 
+F 0 "#P+06" H 1400 1900 50  0001 C CNN
+F 1 "+12V" V 1300 1700 59  0000 L BNN
+F 2 "" H 1400 1900 50  0001 C CNN
+F 3 "" H 1400 1900 50  0001 C CNN
+	1    1400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:DINA4_L #FRAME4
+U 1 1 B9984423
+P 900 7000
+AR Path="/B9984423" Ref="#FRAME4"  Part="1" 
+AR Path="/5DFB8953/B9984423" Ref="#FRAME4"  Part="1" 
+F 0 "#FRAME4" H 900 7000 50  0001 C CNN
+F 1 "DINA4_L" H 900 7000 50  0001 C CNN
+F 2 "" H 900 7000 50  0001 C CNN
+F 3 "" H 900 7000 50  0001 C CNN
+	1    900  7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:DINA4_L #FRAME4
+U 2 1 B998442F
+P 7300 7000
+AR Path="/B998442F" Ref="#FRAME4"  Part="2" 
+AR Path="/5DFB8953/B998442F" Ref="#FRAME4"  Part="2" 
+F 0 "#FRAME4" H 7300 7000 50  0001 C CNN
+F 1 "DINA4_L" H 7300 7000 50  0001 C CNN
+F 2 "" H 7300 7000 50  0001 C CNN
+F 3 "" H 7300 7000 50  0001 C CNN
+	2    7300 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:C-EUC0402 C14
+U 1 1 613C36D4
+P 1400 2600
+AR Path="/613C36D4" Ref="C14"  Part="1" 
+AR Path="/5DFB8953/613C36D4" Ref="C14"  Part="1" 
+F 0 "C14" H 1460 2615 59  0000 L BNN
+F 1 "100nF" H 1460 2415 59  0000 L BNN
+F 2 "Chestnut V2.0:C0402" H 1400 2600 50  0001 C CNN
+F 3 "" H 1400 2600 50  0001 C CNN
+	1    1400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:+12V #P+28
+U 1 1 E6EDA88F
+P 5600 1700
+AR Path="/E6EDA88F" Ref="#P+28"  Part="1" 
+AR Path="/5DFB8953/E6EDA88F" Ref="#P+028"  Part="1" 
+F 0 "#P+028" H 5600 1700 50  0001 C CNN
+F 1 "+12V" V 5500 1500 59  0000 L BNN
+F 2 "" H 5600 1700 50  0001 C CNN
+F 3 "" H 5600 1700 50  0001 C CNN
+	1    5600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:GND #GND26
+U 1 1 9E0685E6
+P 1400 3100
+AR Path="/9E0685E6" Ref="#GND26"  Part="1" 
+AR Path="/5DFB8953/9E0685E6" Ref="#GND026"  Part="1" 
+F 0 "#GND026" H 1400 3100 50  0001 C CNN
+F 1 "GND" H 1300 3000 59  0000 L BNN
+F 2 "" H 1400 3100 50  0001 C CNN
+F 3 "" H 1400 3100 50  0001 C CNN
+	1    1400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:DRV8833RTYT U2
+U 1 1 C2DEB937
+P 4500 2800
+AR Path="/C2DEB937" Ref="U2"  Part="1" 
+AR Path="/5DFB8953/C2DEB937" Ref="U2"  Part="1" 
+F 0 "U2" H 4314 3759 69  0000 L BNN
+F 1 "DRV8833RTYT" H 4277 1674 69  0000 L BNN
+F 2 "Chestnut V2.0:QFN65P400X400X80-17N" H 4500 2800 50  0001 C CNN
+F 3 "" H 4500 2800 50  0001 C CNN
+	1    4500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:GND #GND36
+U 1 1 397F6EFB
+P 3600 3900
+AR Path="/397F6EFB" Ref="#GND36"  Part="1" 
+AR Path="/5DFB8953/397F6EFB" Ref="#GND036"  Part="1" 
+F 0 "#GND036" H 3600 3900 50  0001 C CNN
+F 1 "GND" H 3500 3800 59  0000 L BNN
+F 2 "" H 3600 3900 50  0001 C CNN
+F 3 "" H 3600 3900 50  0001 C CNN
+	1    3600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:R-EU_R0402 R4
+U 1 1 6DEE1610
+P 3600 1900
+AR Path="/6DEE1610" Ref="R4"  Part="1" 
+AR Path="/5DFB8953/6DEE1610" Ref="R4"  Part="1" 
+F 0 "R4" H 3450 1959 59  0000 L BNN
+F 1 "10K" H 3450 1770 59  0000 L BNN
+F 2 "Chestnut V2.0:R0402" H 3600 1900 50  0001 C CNN
+F 3 "" H 3600 1900 50  0001 C CNN
+	1    3600 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:C-EUC0402 C16
+U 1 1 24F52925
+P 5600 2000
+AR Path="/24F52925" Ref="C16"  Part="1" 
+AR Path="/5DFB8953/24F52925" Ref="C16"  Part="1" 
+F 0 "C16" H 5660 2015 59  0000 L BNN
+F 1 "10nF" H 5660 1815 59  0000 L BNN
+F 2 "Chestnut V2.0:C0402" H 5600 2000 50  0001 C CNN
+F 3 "" H 5600 2000 50  0001 C CNN
+	1    5600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:C-EUC0603 C15
+U 1 1 DE6CEF72
+P 1800 2600
+AR Path="/DE6CEF72" Ref="C15"  Part="1" 
+AR Path="/5DFB8953/DE6CEF72" Ref="C15"  Part="1" 
+F 0 "C15" H 1860 2615 59  0000 L BNN
+F 1 "2.2uF" H 1860 2415 59  0000 L BNN
+F 2 "Chestnut V2.0:C0603" H 1800 2600 50  0001 C CNN
+F 3 "" H 1800 2600 50  0001 C CNN
+	1    1800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:SFW5R-1STE1LF M2
+U 1 1 074027D4
+P 7800 4200
+AR Path="/074027D4" Ref="M2"  Part="1" 
+AR Path="/5DFB8953/074027D4" Ref="M2"  Part="1" 
+F 0 "M2" H 7612 4438 69  0000 L BNN
+F 1 "SFW5R-1STE1LF" H 7562 3694 69  0000 L BNN
+F 2 "Chestnut V2.0:FCI_SFW5R-1STE1LF" H 7800 4200 50  0001 C CNN
+F 3 "" H 7800 4200 50  0001 C CNN
+	1    7800 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:GND #GND15
+U 1 1 257B06B4
+P 9100 5000
+AR Path="/257B06B4" Ref="#GND15"  Part="1" 
+AR Path="/5DFB8953/257B06B4" Ref="#GND015"  Part="1" 
+F 0 "#GND015" H 9100 5000 50  0001 C CNN
+F 1 "GND" H 9000 4900 59  0000 L BNN
+F 2 "" H 9100 5000 50  0001 C CNN
+F 3 "" H 9100 5000 50  0001 C CNN
+	1    9100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:SFW5R-1STE1LF M1
+U 1 1 89A59580
+P 7900 2500
+AR Path="/89A59580" Ref="M1"  Part="1" 
+AR Path="/5DFB8953/89A59580" Ref="M1"  Part="1" 
+F 0 "M1" H 7712 2738 69  0000 L BNN
+F 1 "SFW5R-1STE1LF" H 7662 1994 69  0000 L BNN
+F 2 "Chestnut V2.0:FCI_SFW5R-1STE1LF" H 7900 2500 50  0001 C CNN
+F 3 "" H 7900 2500 50  0001 C CNN
+	1    7900 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:+3V3 #+3V10
+U 1 1 7D3B51B6
+P 3600 1500
+AR Path="/7D3B51B6" Ref="#+3V10"  Part="1" 
+AR Path="/5DFB8953/7D3B51B6" Ref="#+3V010"  Part="1" 
+F 0 "#+3V010" H 3600 1500 50  0001 C CNN
+F 1 "+3V3" H 3500 1500 59  0000 L BNN
+F 2 "" H 3600 1500 50  0001 C CNN
+F 3 "" H 3600 1500 50  0001 C CNN
+	1    3600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:+3V3 #+3V11
+U 1 1 2B08D267
+P 8800 1200
+AR Path="/2B08D267" Ref="#+3V11"  Part="1" 
+AR Path="/5DFB8953/2B08D267" Ref="#+3V011"  Part="1" 
+F 0 "#+3V011" H 8800 1200 50  0001 C CNN
+F 1 "+3V3" H 8700 1200 59  0000 L BNN
+F 2 "" H 8800 1200 50  0001 C CNN
+F 3 "" H 8800 1200 50  0001 C CNN
+	1    8800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:R-EU_R0805 R19
+U 1 1 D26DEDBB
+P 2100 2900
+AR Path="/D26DEDBB" Ref="R19"  Part="1" 
+AR Path="/5DFB8953/D26DEDBB" Ref="R19"  Part="1" 
+F 0 "R19" H 1950 2959 59  0000 L BNN
+F 1 "R-EU_R0805" H 1950 2770 59  0000 L BNN
+F 2 "Chestnut V2.0:R0805" H 2100 2900 50  0001 C CNN
+F 3 "" H 2100 2900 50  0001 C CNN
+	1    2100 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:R-EU_R0805 R26
+U 1 1 F2D79648
+P 2300 2900
+AR Path="/F2D79648" Ref="R26"  Part="1" 
+AR Path="/5DFB8953/F2D79648" Ref="R26"  Part="1" 
+F 0 "R26" H 2150 2959 59  0000 L BNN
+F 1 "R-EU_R0805" H 2150 2770 59  0000 L BNN
+F 2 "Chestnut V2.0:R0805" H 2300 2900 50  0001 C CNN
+F 3 "" H 2300 2900 50  0001 C CNN
+	1    2300 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:GND #GND5
+U 1 1 EF27308A
+P 2100 3500
+AR Path="/EF27308A" Ref="#GND5"  Part="1" 
+AR Path="/5DFB8953/EF27308A" Ref="#GND05"  Part="1" 
+F 0 "#GND05" H 2100 3500 50  0001 C CNN
+F 1 "GND" H 2000 3400 59  0000 L BNN
+F 2 "" H 2100 3500 50  0001 C CNN
+F 3 "" H 2100 3500 50  0001 C CNN
+	1    2100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:101X14N330MV4T_X2Y_0603 U$19
+U 1 1 E246D3EE
+P 6450 2600
+AR Path="/E246D3EE" Ref="U$19"  Part="1" 
+AR Path="/5DFB8953/E246D3EE" Ref="U$19"  Part="1" 
+F 0 "U$19" H 6450 2600 50  0001 C CNN
+F 1 "101X14N330MV4T_X2Y_0603" H 6450 2600 50  0001 C CNN
+F 2 "Chestnut V2.0:101X14N330MV4T_X2Y_0603" H 6450 2600 50  0001 C CNN
+F 3 "" H 6450 2600 50  0001 C CNN
+	1    6450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:GND #GND29
+U 1 1 BFC01DE5
+P 6950 3450
+AR Path="/BFC01DE5" Ref="#GND29"  Part="1" 
+AR Path="/5DFB8953/BFC01DE5" Ref="#GND029"  Part="1" 
+F 0 "#GND029" H 6950 3450 50  0001 C CNN
+F 1 "GND" H 6850 3350 59  0000 L BNN
+F 2 "" H 6950 3450 50  0001 C CNN
+F 3 "" H 6950 3450 50  0001 C CNN
+	1    6950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:101X14N330MV4T_X2Y_0603 U$8
+U 1 1 E90442EA
+P 6450 4400
+AR Path="/E90442EA" Ref="U$8"  Part="1" 
+AR Path="/5DFB8953/E90442EA" Ref="U$8"  Part="1" 
+F 0 "U$8" H 6450 4400 50  0001 C CNN
+F 1 "101X14N330MV4T_X2Y_0603" H 6450 4400 50  0001 C CNN
+F 2 "Chestnut V2.0:101X14N330MV4T_X2Y_0603" H 6450 4400 50  0001 C CNN
+F 3 "" H 6450 4400 50  0001 C CNN
+	1    6450 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:GND #GND30
+U 1 1 E66C1352
+P 6950 5200
+AR Path="/E66C1352" Ref="#GND30"  Part="1" 
+AR Path="/5DFB8953/E66C1352" Ref="#GND030"  Part="1" 
+F 0 "#GND030" H 6950 5200 50  0001 C CNN
+F 1 "GND" H 6850 5100 59  0000 L BNN
+F 2 "" H 6950 5200 50  0001 C CNN
+F 3 "" H 6950 5200 50  0001 C CNN
+	1    6950 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:C-EUC0402 C37
+U 1 1 CD643E83
+P 9900 2700
+AR Path="/CD643E83" Ref="C37"  Part="1" 
+AR Path="/5DFB8953/CD643E83" Ref="C37"  Part="1" 
+F 0 "C37" H 9960 2715 59  0000 L BNN
+F 1 "10nF" H 9960 2515 59  0000 L BNN
+F 2 "Chestnut V2.0:C0402" H 9900 2700 50  0001 C CNN
+F 3 "" H 9900 2700 50  0001 C CNN
+	1    9900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:GND #GND44
+U 1 1 1165F8F0
+P 9900 3200
+AR Path="/1165F8F0" Ref="#GND44"  Part="1" 
+AR Path="/5DFB8953/1165F8F0" Ref="#GND044"  Part="1" 
+F 0 "#GND044" H 9900 3200 50  0001 C CNN
+F 1 "GND" H 9800 3100 59  0000 L BNN
+F 2 "" H 9900 3200 50  0001 C CNN
+F 3 "" H 9900 3200 50  0001 C CNN
+	1    9900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:C-EUC0402 C38
+U 1 1 25D15128
+P 9900 4450
+AR Path="/25D15128" Ref="C38"  Part="1" 
+AR Path="/5DFB8953/25D15128" Ref="C38"  Part="1" 
+F 0 "C38" H 9960 4465 59  0000 L BNN
+F 1 "10nF" H 9960 4265 59  0000 L BNN
+F 2 "Chestnut V2.0:C0402" H 9900 4450 50  0001 C CNN
+F 3 "" H 9900 4450 50  0001 C CNN
+	1    9900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Chestnut_V2.0-eagle-import:GND #GND45
+U 1 1 9E0B3A99
+P 9900 4950
+AR Path="/9E0B3A99" Ref="#GND45"  Part="1" 
+AR Path="/5DFB8953/9E0B3A99" Ref="#GND045"  Part="1" 
+F 0 "#GND045" H 9900 4950 50  0001 C CNN
+F 1 "GND" H 9800 4850 59  0000 L BNN
+F 2 "" H 9900 4950 50  0001 C CNN
+F 3 "" H 9900 4950 50  0001 C CNN
+	1    9900 4950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
