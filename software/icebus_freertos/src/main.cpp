@@ -54,8 +54,14 @@ union HandStatusResponse{
         uint32_t header;
         uint8_t id;
         uint32_t control_mode;
-        uint32_t setpoint;
-        uint32_t position;
+        uint8_t setpoint0;
+        uint8_t setpoint1;
+        uint8_t setpoint2;
+        uint8_t setpoint3;
+        uint8_t position0;
+        uint8_t position1;
+        uint8_t position2;
+        uint8_t position3;
         uint16_t current0;
         uint16_t current1;
         uint16_t current2;
@@ -75,22 +81,22 @@ struct Frame{
   uint8_t data[MAX_FRAME_LENGTH];
   uint frame_index = 0;
   bool active = false, dirty = false;
-  String type;
+  int type;
   int counter = 0;
 };
 
 class Icebus{
 public:
   Icebus(){
-    frames[0].type = "status_request";
+    frames[0].type = 0;
     frames[0].header.val = 0xBEBAADAB;
     frames[0].length = 7;
 
-    frames[1].type = "hand_command";
+    frames[1].type = 1;
     frames[1].header.val = 0x0DF005B1;
     frames[1].length = 14;
 
-    frames[2].type = "hand_control_mode";
+    frames[2].type = 2;
     frames[2].header.val = 0xB5006BB1;
     frames[2].length = 11;
 
@@ -130,23 +136,62 @@ public:
   bool frameMatch(){
     for(int i=0;i<3;i++){
       if(frames[i].dirty){
-        crc crc_received = gen_crc16(&frames[i].data[HEADER_LENGTH],frames[i].length-HEADER_LENGTH-2);
-        if(crc_received==(frames[i].data[frames[i].length-1]<<8|frames[i].data[frames[i].length-2])){
-          SERIAL.print(frames[i].type);
-          SERIAL.print(" received ");
-          SERIAL.println(frames[i].counter);
-        }else{
-          SERIAL.print(frames[i].type);
-          SERIAL.print(" received ");
-          SERIAL.print(frames[i].counter);
-          SERIAL.print(" but crc does not match");
+        if(frames[i].data[4]==ID){
+          crc crc_received = gen_crc16(&frames[i].data[HEADER_LENGTH],frames[i].length-HEADER_LENGTH-2);
+          if(crc_received==(frames[i].data[frames[i].length-1]<<8|frames[i].data[frames[i].length-2])){
+            switch(frames[i].type){
+              case 0: { // status_request
+                  SERIAL.print(frames[i].counter);
+                  SERIAL.print("\tstatus_request received for id ");
+                  SERIAL.println(frames[i].data[4]);
+                  HandStatusResponse msg;
+                  msg.values.id = ID;
+                  msg.values.control_mode = 1;
+                  msg.values.position0 = 0;
+                  msg.values.position1 = 0;
+                  msg.values.position2 = 0;
+                  msg.values.position3 = 0;
+                  msg.values.current0 = 1;
+                  msg.values.current1 = 1;
+                  msg.values.current2 = 1;
+                  msg.values.current3 = 1;
+                  msg.values.setpoint0 = 2;
+                  msg.values.setpoint1 = 2;
+                  msg.values.setpoint2 = 2;
+                  msg.values.setpoint3 = 2;
+                  msg.values.neopixel_color = 80;
+                  msg.values.crc = gen_crc16(&msg.data[4],sizeof(msg)-HEADER_LENGTH-2);
+                  Serial.write(msg.data,sizeof(msg));
+                break;
+              }
+              case 1: { // hand_command
+                SERIAL.print(frames[i].counter);
+                SERIAL.print("\thand_command received for id ");
+                SERIAL.println(frames[i].data[4]);
+                
+                break;
+              }
+              case 2: { // hand_control_mode
+                SERIAL.print(frames[i].counter);
+                SERIAL.print("\thand_control_mode received for id ");
+                SERIAL.println(frames[i].data[4]);
+                break;
+              }
+            }
+          }else{
+            SERIAL.print(frames[i].type);
+            SERIAL.print(" received ");
+            SERIAL.print(frames[i].counter);
+            SERIAL.print(" but crc does not match");
+          }
+          frames[i].dirty = false;
         }
-        frames[i].dirty = false;
       }
     }
   }
 
 private:
+  uint8_t ID = 128;
   Frame frames[3];
   uint write_index = 0;
   uint read_index = 0;
