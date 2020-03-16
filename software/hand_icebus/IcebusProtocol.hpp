@@ -38,11 +38,13 @@ union HandCommand{
   struct __attribute__((packed)) {
         uint32_t header;
         uint8_t id;
-        uint8_t motor;
-        uint16_t setpoint;
+        uint16_t setpoint0;
+        uint16_t setpoint1;
+        uint16_t setpoint2;
+        uint16_t setpoint3;
         uint16_t crc;
     }values = {.header = 0x0DF005B1};
-    uint8_t data[10];
+    uint8_t data[15];
 };
 
 union HandControlMode{
@@ -59,15 +61,15 @@ union HandStatusResponse{
   struct __attribute__((packed)) {
         uint32_t header;
         uint8_t id;
-        uint32_t control_mode;
-        uint8_t setpoint0;
-        uint8_t setpoint1;
-        uint8_t setpoint2;
-        uint8_t setpoint3;
-        uint8_t position0;
-        uint8_t position1;
-        uint8_t position2;
-        uint8_t position3;
+        uint8_t control_mode;
+        uint16_t setpoint0;
+        uint16_t setpoint1;
+        uint16_t setpoint2;
+        uint16_t setpoint3;
+        uint16_t position0;
+        uint16_t position1;
+        uint16_t position2;
+        uint16_t position3;
         uint16_t current0;
         uint16_t current1;
         uint16_t current2;
@@ -75,7 +77,7 @@ union HandStatusResponse{
         int32_t neopixel_color:24;
         uint16_t crc;
     }values = {.header = 0x35B1000B };
-    uint8_t data[26];
+    uint8_t data[35];
 };
 
 struct Frame{
@@ -100,7 +102,7 @@ public:
 
     frames[1].type = 1;
     frames[1].header.val = 0x0DF005B1;
-    frames[1].length = 10;
+    frames[1].length = 15;
 
     frames[2].type = 2;
     frames[2].header.val = 0xB5006BB1;
@@ -165,10 +167,10 @@ public:
                   msg.values.current1 = finger[1].readCurrent();
                   msg.values.current2 = finger[2].readCurrent();
                   msg.values.current3 = finger[3].readCurrent();
-//                  msg.values.setpoint0 = 2;
-//                  msg.values.setpoint1 = 2;
-//                  msg.values.setpoint2 = 2;
-//                  msg.values.setpoint3 = 2;
+                  msg.values.setpoint0 = finger[0].readTargetPos();
+                  msg.values.setpoint1 = finger[1].readTargetPos();
+                  msg.values.setpoint2 = finger[2].readTargetPos();
+                  msg.values.setpoint3 = finger[3].readTargetPos();
                   msg.values.neopixel_color = 80;
                   msg.values.crc = gen_crc16(&msg.data[4],sizeof(msg)-HEADER_LENGTH-2);
                   Serial.write(msg.data,sizeof(msg));
@@ -177,16 +179,19 @@ public:
               case 1: { // hand_command
                 HandCommand msg;
                 memcpy(msg.data,frames[i].data,frames[i].length);
-                finger[0].writePos(msg.values.setpoint);
-                finger[1].writePos(msg.values.setpoint);
-                finger[2].writePos(msg.values.setpoint);
-                finger[3].writePos(msg.values.setpoint);
+                finger[0].writePos(msg.values.setpoint0);
+                finger[1].writePos(msg.values.setpoint1);
+                finger[2].writePos(msg.values.setpoint2);
+                finger[3].writePos(msg.values.setpoint3);
                 #ifdef PRINTOUTS
                 SERIAL.print(frames[i].counter);
                 SERIAL.print("\thand_command received for id ");
                 SERIAL.print(frames[i].data[4]);
-                SERIAL.print("\tsetpoint ");
-                SERIAL.println(msg.values.setpoint);
+                SERIAL.print("\tsetpoints ");
+                SERIAL.print(msg.values.setpoint0);SERIAL.print("\t");
+                SERIAL.print(msg.values.setpoint1);SERIAL.print("\t");
+                SERIAL.print(msg.values.setpoint2);SERIAL.print("\t");
+                SERIAL.print(msg.values.setpoint3);SERIAL.println();
                 #endif
                 
                 break;

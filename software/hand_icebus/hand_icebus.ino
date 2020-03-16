@@ -42,7 +42,7 @@ void setup()
 //  delay(1500);
 
   //====== added additional uart to FPGA ===== 
-  Serial.begin(9600);
+  Serial.begin(19200);
   SerialUSB.println("hand ready");
 
   delay(1500);
