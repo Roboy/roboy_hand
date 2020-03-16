@@ -7,7 +7,7 @@
  * This work is licensed under the Creative Commons Attribution 4.0 International License.
  * To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
  *
- */ 
+ */
 
 #ifndef FINGERLIB_H_
 #define FINGERLIB_H_
@@ -18,7 +18,7 @@
 
 // CHANGE SETTINGS
 // Uncomment out the following to use PID pos control instead of custom P control
-#define USE_PID					
+#define USE_PID
 
 // Uncomment the following to enable force/current sensing (Arduino Zero & Chestnut PCB Only) (Automatically enabled when using Chestnut PCB)
 //#define FORCE_SENSE
@@ -47,7 +47,7 @@
 // SETTING SPECIFIC LIBRARIES
 #if	defined(USE_PID)
 	#include "pid/pid_controller.h"
-#endif 
+#endif
 
 #if defined(FORCE_SENSE)
 	#if defined(ARDUINO_ARCH_SAMD)
@@ -93,7 +93,7 @@
 #define MAX_FINGER_POS				973				// maximum motor position
 #define MIN_FINGER_POS				50				// minimum motor position
 
-#define POS_REACHED_TOLERANCE		50				// tolerance for posReached()
+#define POS_REACHED_TOLERANCE		0				// tolerance for posReached()
 
 #if	defined(FORCE_SENSE)
 	// STALL DETECTION
@@ -162,7 +162,7 @@ class Finger
 		uint8_t attach(uint8_t dir0, uint8_t dir1, uint8_t posSns, bool inv);						// attach pins to a finger using only position control, but allow the direction to be inverted
 		uint8_t attach(uint8_t dir0, uint8_t dir1, uint8_t posSns, uint8_t forceSns, bool inv);		// attach pins to a finger using position control and force control, and allow the direction to be inverted
 		void detach(void);						// deactivate the finger
-		bool attached(void);					// return true if the current finger is attached and initialised correctly 
+		bool attached(void);					// return true if the current finger is attached and initialised correctly
 		void invertFingerDir(void);				// set the motor to be inverted
 
 		// LIMITS
@@ -187,7 +187,7 @@ class Finger
 		void open(void);					// open the finger
 		void close(void);					// close the finger
 		void open_close(void);				// toggle finger between open/closed
-		void open_close(boolean dir);		// set finger to open/close 
+		void open_close(boolean dir);		// set finger to open/close
 
 		// SPEED
 		void writeSpeed(int value);			// write a target speed to the finger
@@ -217,7 +217,7 @@ class Finger
 		void enableInterrupt(void);			// enable timer interrupt for motor control
 		void disableInterrupt(void);		// disable timer interrupt for motor control
 
-		
+
 
 		//// PRINT
 		//void printPos(void);				// print the current position (no new line)
@@ -232,7 +232,7 @@ class Finger
 
 		//void printSpeed(void);			// print the current speed (no new line)
 		//void printSpeed(bool newL);		// print the current speed (new line)
-		//		
+		//
 		//void printDetails(void);			// print current position, direction, speed and whether the target position has been reached
 		//void printConfig(void);			// print finger number, pins and limits
 
@@ -244,12 +244,12 @@ class Finger
 #endif
 
 	private:
-	
+
 #ifdef USE_PID
 		// PID CONTROLLERS
 		PID_CONTROLLER _PID;
 #endif
-		// BUFFERS 
+		// BUFFERS
 		CIRCLE_BUFFER <float> _velBuff;			// velocity buffer
 #ifdef FORCE_SENSE
 		CIRCLE_BUFFER <uint16_t> _IBuff;		// current buffer
@@ -269,7 +269,7 @@ class Finger
 		VectorProperties _pos;		// position properties (prev, curr, targ, error, limit)
 		VectorProperties _dir;		// direction properties (curr)
 		VectorProperties _speed;	// movement speed properties (prev, curr, targ, error, limit)
-		VectorProperties _PWM;		// PWM speed properties (prev, curr, targ, error, limit)		
+		VectorProperties _PWM;		// PWM speed properties (prev, curr, targ, error, limit)
 #ifdef FORCE_SENSE
 		VectorProperties _force;	// force properties (prev, curr, targ, error, limit) (all stored as ADC values instead of N)
 #endif
@@ -300,12 +300,12 @@ class Finger
 // INTERRUPT HANDLERS
 void _fingerControlCallback(void);		// runs the control() function of a Finger instance at each call by the timer interrupt
 #ifdef FORCE_SENSE
-void _currentSenseCallback(void);		// runs the calcCurrentSns() function of a Finger instance at each call 
+void _currentSenseCallback(void);		// runs the calcCurrentSns() function of a Finger instance at each call
 #endif
 
 // HARDWARE SPECIFIC FUNCTIONS
 #ifdef ARDUINO_AVR_MEGA2560
 void setPWMFreq(uint8_t pin, uint8_t value);	// change the PWM timer frequency to be out of the audible range
-#endif	
+#endif
 
 #endif /* FINGERLIB_H_ */

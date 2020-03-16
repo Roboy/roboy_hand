@@ -38,7 +38,7 @@
 //#define DEFAULT_GAIN_D		0.1
 
 #define DEFAULT_GAIN_P		2
-#define DEFAULT_GAIN_I		0
+#define DEFAULT_GAIN_I		10
 #define DEFAULT_GAIN_D		10
 
 
@@ -55,7 +55,7 @@ class PID_CONTROLLER
 
 		double run(double targ, double curr);			// run the PID computation
 
-		void setLimits(double min, double max);			// set the output value limits					
+		void setLimits(double min, double max);			// set the output value limits
 		void getLimits(double *min, double *max);		// get the output value limits
 		void setRampRate(double ramp);					// set the maximum change in output limit
 
@@ -70,11 +70,11 @@ class PID_CONTROLLER
 		double _min, _max;								// output limits
 		double _rampLim;								// ramp rate limit
 
-		double _prevOutput;								// previous output (used 
+		double _prevOutput;								// previous output (used
 
 		float _Kp, _Ki, _Kd;							// PID controller gains
 
-		double _dInput;									// change in input over time 
+		double _dInput;									// change in input over time
 		double _prev;									// previous input
 
 		double _integral;								// integral value

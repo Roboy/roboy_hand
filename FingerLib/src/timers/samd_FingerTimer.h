@@ -4,10 +4,10 @@
  * Created: 02/11/2015 11:12:48
  * Author: Olly McBride
  *
- * This work is licensed under the Creative Commons Attribution 4.0 International License. 
+ * This work is licensed under the Creative Commons Attribution 4.0 International License.
  * To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
  *
- */ 
+ */
 
 #if defined(ARDUINO_ARCH_SAMD)
 
@@ -44,7 +44,7 @@
 #define ms(val)		((val)*(TIMER_FREQ))		// number of timer ticks per ms
 
 // calculate number of timer ticks per ms for each timer function
-#define MILLI_TIME        ms(1)					// 1ms		1kHz	
+#define MILLI_TIME        ms(1)					// 1ms		1kHz
 #define MOTOR_CTRL_TIME   ms(5)					// 5ms		200Hz
 
 // function prototypes

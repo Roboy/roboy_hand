@@ -83,28 +83,32 @@ void loop()
   //LED.setMode(LED_MODE_SOLID);
   //LED.setBrightness(10);
   //LED.setColour(255,0,0);
-  pixel.setPixelColor(0, pixel.Color(255, 0, 255));
-  pixel.show();
-
-   for (int i = 0; i < NUM_FINGERS; i++){
-      Serial.print("F");
-      Serial.write(i);
-      Serial.print(" ");
-      Serial.write(finger[i].readPos());
-      //Serial.print("\n");
-      Serial.write(13);Serial.write(10);
-   }
-  
-  pollSerial();
-  
-  delay(100);
-
-  //closeHand();
-
-  pixel.setPixelColor(0, pixel.Color(255, 0, 0));
-  pixel.show();
-  delay(100);
-  //openHand();
+//  pixel.setPixelColor(0, pixel.Color(255, 0, 255));
+//  pixel.show();
+//
+//   for (int i = 0; i < NUM_FINGERS; i++){
+//      Serial.print("F");
+//      Serial.write(i);
+//      Serial.print(" ");
+//      Serial.write(finger[i].readPos());
+//      //Serial.print("\n");
+//      Serial.write(13);Serial.write(10);
+//   }
+//  
+//  pollSerial();
+//  
+//  delay(100);
+//
+//  //closeHand();
+//
+//  pixel.setPixelColor(0, pixel.Color(255, 0, 0));
+//  pixel.show();
+//  delay(100);
+//  //openHand();
+finger[1].open();
+delay(1000);
+finger[1].close();
+delay(1000);
 
   /*
   while (Serial.available()) {

@@ -1,6 +1,12 @@
 #include <FreeRTOS_SAMD21.h> //samd21
+#include <FingerLib.h>
+
+Finger finger[4];
 
 #define SERIAL          SerialUSB
+
+#define PIN_A9    (24ul)
+static const uint8_t A9 = PIN_A9;
 
 //**************************************************************************
 // global variables
@@ -133,7 +139,7 @@ public:
     }
   }
 
-  bool frameMatch(){
+  void frameMatch(){
     for(int i=0;i<3;i++){
       if(frames[i].dirty){
         if(frames[i].data[4]==ID){
@@ -147,14 +153,14 @@ public:
                   HandStatusResponse msg;
                   msg.values.id = ID;
                   msg.values.control_mode = 1;
-                  msg.values.position0 = 0;
-                  msg.values.position1 = 0;
-                  msg.values.position2 = 0;
-                  msg.values.position3 = 0;
-                  msg.values.current0 = 1;
-                  msg.values.current1 = 1;
-                  msg.values.current2 = 1;
-                  msg.values.current3 = 1;
+                  // msg.values.position0 = finger[0].readPos();
+                  // msg.values.position1 = finger[1].readPos();
+                  // msg.values.position2 = finger[2].readPos();
+                  // msg.values.position3 = finger[3].readPos();
+                  msg.values.current0 = analogRead(A9);
+                  msg.values.current1 = analogRead(1);
+                  msg.values.current2 = analogRead(0);
+                  msg.values.current3 = analogRead(A5);
                   msg.values.setpoint0 = 2;
                   msg.values.setpoint1 = 2;
                   msg.values.setpoint2 = 2;
@@ -168,7 +174,7 @@ public:
                 SERIAL.print(frames[i].counter);
                 SERIAL.print("\thand_command received for id ");
                 SERIAL.println(frames[i].data[4]);
-                
+
                 break;
               }
               case 2: { // hand_control_mode
@@ -184,8 +190,8 @@ public:
             SERIAL.print(frames[i].counter);
             SERIAL.print(" but crc does not match");
           }
-          frames[i].dirty = false;
         }
+        frames[i].dirty = false;
       }
     }
   }
@@ -263,6 +269,28 @@ void setup()
   SERIAL.println("        hand start         ");
   SERIAL.println("******************************");
 
+  // pinMode(3, OUTPUT);  // sets the pin as output
+  // pinMode(4, OUTPUT);  // sets the pin as output
+  // pinMode(6, OUTPUT);  // sets the pin as output
+  // pinMode(9, OUTPUT);  // sets the pin as output
+  // pinMode(5, OUTPUT);  // sets the pin as output
+  // pinMode(12, OUTPUT);  // sets the pin as output
+  // pinMode(10, OUTPUT);  // sets the pin as output
+  // pinMode(11, OUTPUT);  // sets the pin as output
+  //
+  // analogWrite(3, 100);
+  // analogWrite(4, 100);
+  // analogWrite(6, 100);
+  // analogWrite(9, 100);
+  // analogWrite(5, 100);
+  // analogWrite(12, 100);
+  // analogWrite(10, 100);
+  // analogWrite(11, 100);
+  // finger[0].attach(10, 11, A1, A9, false); // attach the thumbA9
+  // finger[3].attach(4, 3, A0, 1, true); // attach the ring & pinky (fingers are inverted)
+  // finger[1].attach(9, 6, A3, 0, true); // attach the index (finger is inverted)
+  // finger[2].attach(5, 12, A2, A5, true); //doesn't move (could be wronge pin
+
   // Create the threads that will be managed by the rtos
   // Sets the stack size and priority of each task
   // Also initializes a handler pointer to each task, which are important to communicate with and retrieve info from tasks
@@ -282,7 +310,11 @@ void loop()
 {
     // Optional commands, can comment/uncomment below
     //SERIAL.print("."); //print out dots in terminal, we only do this when the RTOS is in the idle state
-    vNopDelayMS(100);
+    // vNopDelayMS(100); // prevents usb driver crash on startup, do not omit this
+    // finger[1].open();
+    // vNopDelayMS(1000); // prevents usb driver crash on startup, do not omit this
+    // finger[1].close();
+    vNopDelayMS(1000); // prevents usb driver crash on startup, do not omit this
 }
 
 

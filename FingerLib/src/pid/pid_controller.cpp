@@ -65,9 +65,9 @@ double PID_CONTROLLER::run(double targ, double curr)
 
 	if (sampleTime > 0)
 	{
-		// integral summation allows _Ki to change without causing unwanted disturbances 
+		// integral summation allows _Ki to change without causing unwanted disturbances
 		_integral += _Ki * error * sampleTime;
-		_integral = constrain(_integral, _min, _max);
+		_integral = constrain(_integral, -50, 50);
 
 		// store the change in input to remove the derivative spike
 		double _dInput = (curr - _prev) / sampleTime;
