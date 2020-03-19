@@ -51,7 +51,10 @@ union HandControlMode{
   struct __attribute__((packed)) {
         uint32_t header;
         uint8_t id;
-        uint32_t control_mode;
+        uint8_t control_mode0;
+        uint8_t control_mode1;
+        uint8_t control_mode2;
+        uint8_t control_mode3;
         uint16_t crc;
     }values = {.header= 0xB5006BB1 };
     uint8_t data[11];
@@ -74,10 +77,9 @@ union HandStatusResponse{
         uint16_t current1;
         uint16_t current2;
         uint16_t current3;
-        int32_t neopixel_color:24;
         uint16_t crc;
-    }values = {.header = 0x35B1000B };
-    uint8_t data[35];
+    }values = {.header = 0x35B100B0 };
+    uint8_t data[32];
 };
 
 struct Frame{
@@ -115,29 +117,31 @@ public:
     for(int i=0;i<2;i++){
       if(!frames[i].active){
         if(val==frames[i].header.bytes[frames[i].frame_index]){
-          // SERIAL.print(val,HEX);
-          // SERIAL.print(" matches byte number ");
-          // SERIAL.println(frames[i].frame_index);
+//           SERIAL.print(val,HEX);
+//           SERIAL.print(" matches byte number ");
+//           SERIAL.println(frames[i].frame_index);
           frames[i].frame_index++;
           if(frames[i].frame_index==4){
             frames[i].active = true;
-            // SERIAL.print(frames[i].type);
-            // SERIAL.println(" frame matched");
+//             SERIAL.print(frames[i].type);
+//             SERIAL.println(" frame matched");
           }
         }else{
           frames[i].frame_index = 0;
         }
       }else{
-        if(frames[i].frame_index<frames[i].length){
+        if(frames[i].frame_index<frames[i].length-1){
           frames[i].data[frames[i].frame_index] = val;
           frames[i].frame_index++;
-        }else{
+        }else{  
+          frames[i].data[frames[i].frame_index] = val;
           frames[i].counter++;
           frames[i].active = false;
           frames[i].dirty = true;
           frames[i].frame_index = 0;
+          frameMatch();
         }
-//        break;
+        break;
       }
     }
   }
@@ -156,7 +160,7 @@ public:
                   SERIAL.println(frames[i].data[4]);
                   #endif
                   HandStatusResponse msg;
-                  msg.values.header = 0x35B1000B;
+                  msg.values.header = 0x35B100B0;
                   msg.values.id = ID;
                   msg.values.control_mode = 1;
                   msg.values.position0 = finger[0].readPos();
@@ -171,9 +175,10 @@ public:
                   msg.values.setpoint1 = finger[1].readTargetPos();
                   msg.values.setpoint2 = finger[2].readTargetPos();
                   msg.values.setpoint3 = finger[3].readTargetPos();
-                  msg.values.neopixel_color = 80;
                   msg.values.crc = gen_crc16(&msg.data[4],sizeof(msg)-HEADER_LENGTH-2);
+//                  noInterrupts();
                   Serial.write(msg.data,sizeof(msg));
+//                  interrupts();
                 break;
               }
               case 1: { // hand_command
@@ -193,7 +198,7 @@ public:
                 SERIAL.print(msg.values.setpoint2);SERIAL.print("\t");
                 SERIAL.print(msg.values.setpoint3);SERIAL.println();
                 #endif
-                
+
                 break;
               }
               case 2: { // hand_control_mode
@@ -207,13 +212,19 @@ public:
             }
           }else{
             #ifdef PRINTOUTS
+            SERIAL.print("crc error, calculated ");
             SERIAL.print(crc_received,HEX);
-            SERIAL.print("\t");
+            SERIAL.print("\t received ");
             SERIAL.println((frames[i].data[frames[i].length-1]<<8|frames[i].data[frames[i].length-2]),HEX);
 //            SERIAL.print(" received ");
 //            SERIAL.print(frames[i].counter);
             #endif
           }
+        }else{
+          #ifdef PRINTOUTS
+          SERIAL.print("not for me, it's for ");
+          SERIAL.println(frames[i].data[4]);
+          #endif
         }
         frames[i].dirty = false;
       }
@@ -221,7 +232,7 @@ public:
   }
 
 private:
-  uint8_t ID = 128;
+  uint8_t ID = 129;
   Frame frames[3];
   uint write_index = 0;
   uint read_index = 0;
