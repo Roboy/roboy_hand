@@ -42,7 +42,7 @@ void setup()
 //  delay(1500);
 
   //====== added additional uart to FPGA ===== 
-  Serial.begin(9600);
+  Serial.begin(19200);
   SerialUSB.println("hand ready");
 
   delay(1500);
@@ -53,13 +53,11 @@ int counter = 0;
 
 void loop()
 { 
-//  noInterrupts();
+  noInterrupts();
   while(Serial.available()){
       icebus.receive(Serial.read());
   }
-//  interrupts();
-
-  icebus.frameMatch();
+  interrupts();
 
   if((counter++)%10000==0){
     SerialUSB.println(counter);

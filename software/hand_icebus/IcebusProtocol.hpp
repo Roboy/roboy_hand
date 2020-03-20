@@ -25,6 +25,8 @@ typedef uint16_t crc;
 #define TOPBIT (1 << (WIDTH - 1))
 #define POLYNOMIAL 0x8005
 
+uint8_t control_mode[4] = {0,0,0,0};
+
 union HandStatusRequest{
   struct __attribute__((packed)) {
         uint32_t header;
@@ -51,13 +53,10 @@ union HandControlMode{
   struct __attribute__((packed)) {
         uint32_t header;
         uint8_t id;
-        uint8_t control_mode0;
-        uint8_t control_mode1;
-        uint8_t control_mode2;
-        uint8_t control_mode3;
+        uint8_t control_mode;
         uint16_t crc;
     }values = {.header= 0xB5006BB1 };
-    uint8_t data[11];
+    uint8_t data[8];
 };
 
 union HandStatusResponse{
@@ -108,13 +107,13 @@ public:
 
     frames[2].type = 2;
     frames[2].header.val = 0xB5006BB1;
-    frames[2].length = 11;
+    frames[2].length = 8;
 
     crcInit();
   }
 
   void receive(uint8_t val){
-    for(int i=0;i<2;i++){
+    for(int i=0;i<3;i++){
       if(!frames[i].active){
         if(val==frames[i].header.bytes[frames[i].frame_index]){
 //           SERIAL.print(val,HEX);
@@ -141,7 +140,6 @@ public:
           frames[i].frame_index = 0;
           frameMatch();
         }
-        break;
       }
     }
   }
@@ -162,7 +160,7 @@ public:
                   HandStatusResponse msg;
                   msg.values.header = 0x35B100B0;
                   msg.values.id = ID;
-                  msg.values.control_mode = 1;
+                  msg.values.control_mode = ((control_mode[0]<<6)|(control_mode[1]<<4)|(control_mode[2]<<2)|control_mode[3]);
                   msg.values.position0 = finger[0].readPos();
                   msg.values.position1 = finger[1].readPos();
                   msg.values.position2 = finger[2].readPos();
@@ -202,10 +200,21 @@ public:
                 break;
               }
               case 2: { // hand_control_mode
+                HandControlMode msg;
+                memcpy(msg.data,frames[i].data,frames[i].length);
+                control_mode[0] = (msg.values.control_mode>>6)&0x3;
+                control_mode[1] = (msg.values.control_mode>>4)&0x3;
+                control_mode[2] = (msg.values.control_mode>>2)&0x3;
+                control_mode[3] = (msg.values.control_mode&0x3);
                 #ifdef PRINTOUTS
                 SERIAL.print(frames[i].counter);
                 SERIAL.print("\thand_control_mode received for id ");
                 SERIAL.println(frames[i].data[4]);
+                SERIAL.print("\tcontrol_mode ");
+                SERIAL.print((msg.values.control_mode>>6)&0x3);SERIAL.print("\t");
+                SERIAL.print((msg.values.control_mode>>4)&0x3);SERIAL.print("\t");
+                SERIAL.print((msg.values.control_mode>>2)&0x3);SERIAL.print("\t");
+                SERIAL.print((msg.values.control_mode)&0x3);SERIAL.println();
                 #endif
                 break;
               }
@@ -220,19 +229,20 @@ public:
 //            SERIAL.print(frames[i].counter);
             #endif
           }
-        }else{
-          #ifdef PRINTOUTS
-          SERIAL.print("not for me, it's for ");
-          SERIAL.println(frames[i].data[4]);
-          #endif
         }
+//        #ifdef PRINTOUTS
+//        else{
+//          SERIAL.print("not for me, it's for ");
+//          SERIAL.println(frames[i].data[4]);
+//        }
+//        #endif
         frames[i].dirty = false;
       }
     }
   }
 
 private:
-  uint8_t ID = 129;
+  uint8_t ID = 134;
   Frame frames[3];
   uint write_index = 0;
   uint read_index = 0;
