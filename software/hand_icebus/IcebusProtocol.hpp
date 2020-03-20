@@ -26,6 +26,7 @@ typedef uint16_t crc;
 #define POLYNOMIAL 0x8005
 
 uint8_t control_mode[4] = {0,0,0,0};
+uint16_t setpoint[4] = {0,0,0,0};
 
 union HandStatusRequest{
   struct __attribute__((packed)) {
@@ -161,6 +162,10 @@ public:
                   msg.values.header = 0x35B100B0;
                   msg.values.id = ID;
                   msg.values.control_mode = ((control_mode[0]<<6)|(control_mode[1]<<4)|(control_mode[2]<<2)|control_mode[3]);
+                  msg.values.setpoint0 = setpoint[0];
+                  msg.values.setpoint1 = setpoint[1];
+                  msg.values.setpoint2 = setpoint[2];
+                  msg.values.setpoint3 = setpoint[3];
                   msg.values.position0 = finger[0].readPos();
                   msg.values.position1 = finger[1].readPos();
                   msg.values.position2 = finger[2].readPos();
@@ -169,10 +174,6 @@ public:
                   msg.values.current1 = finger[1].readCurrent();
                   msg.values.current2 = finger[2].readCurrent();
                   msg.values.current3 = finger[3].readCurrent();
-                  msg.values.setpoint0 = finger[0].readTargetPos();
-                  msg.values.setpoint1 = finger[1].readTargetPos();
-                  msg.values.setpoint2 = finger[2].readTargetPos();
-                  msg.values.setpoint3 = finger[3].readTargetPos();
                   msg.values.crc = gen_crc16(&msg.data[4],sizeof(msg)-HEADER_LENGTH-2);
 //                  noInterrupts();
                   Serial.write(msg.data,sizeof(msg));
@@ -182,10 +183,14 @@ public:
               case 1: { // hand_command
                 HandCommand msg;
                 memcpy(msg.data,frames[i].data,frames[i].length);
-                finger[0].writePos(msg.values.setpoint0);
-                finger[1].writePos(msg.values.setpoint1);
-                finger[2].writePos(msg.values.setpoint2);
-                finger[3].writePos(msg.values.setpoint3);
+                setpoint[0] = msg.values.setpoint0;
+                setpoint[1] = msg.values.setpoint1;
+                setpoint[2] = msg.values.setpoint2;
+                setpoint[3] = msg.values.setpoint3;
+                finger[0].writePos(setpoint[0]);
+                finger[1].writePos(setpoint[1]);
+                finger[2].writePos(setpoint[2]);
+                finger[3].writePos(setpoint[3]);
                 #ifdef PRINTOUTS
                 SERIAL.print(frames[i].counter);
                 SERIAL.print("\thand_command received for id ");
