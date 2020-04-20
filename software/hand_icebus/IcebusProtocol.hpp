@@ -33,7 +33,7 @@ union HandStatusRequest{
         uint32_t header;
         uint8_t id;
         uint16_t crc;
-    }values = {.header = 0xBEBAADAB};
+    }values = {.header = 0xBBCEE11C};
     uint8_t data[7];
 };
 
@@ -99,7 +99,7 @@ class Icebus{
 public:
   Icebus(){
     frames[0].type = 0;
-    frames[0].header.val = 0xBEBAADAB;
+    frames[0].header.val = 0xBBCEE11C;
     frames[0].length = 7;
 
     frames[1].type = 1;
@@ -125,6 +125,7 @@ public:
             frames[i].active = true;
 //             SERIAL.print(frames[i].type);
 //             SERIAL.println(" frame matched");
+            digitalWrite(13,true); // drive enable
           }
         }else{
           frames[i].frame_index = 0;
@@ -139,7 +140,10 @@ public:
           frames[i].active = false;
           frames[i].dirty = true;
           frames[i].frame_index = 0;
+          
           frameMatch();
+          delay(2);
+          digitalWrite(13,false); // drive disable
         }
       }
     }
@@ -175,9 +179,7 @@ public:
                   msg.values.current2 = finger[2].readCurrent();
                   msg.values.current3 = finger[3].readCurrent();
                   msg.values.crc = gen_crc16(&msg.data[4],sizeof(msg)-HEADER_LENGTH-2);
-//                  noInterrupts();
                   Serial.write(msg.data,sizeof(msg));
-//                  interrupts();
                 break;
               }
               case 1: { // hand_command

@@ -45,19 +45,20 @@ void setup()
   Serial.begin(19200);
   SerialUSB.println("hand ready");
 
+  pinMode(13,OUTPUT);
+
   delay(1500);
 }
 
 
 int counter = 0;
+bool toggle = false;
 
 void loop()
 { 
-  noInterrupts();
   while(Serial.available()){
       icebus.receive(Serial.read());
   }
-  interrupts();
 
   if((counter++)%10000==0){
     SerialUSB.println(counter);
