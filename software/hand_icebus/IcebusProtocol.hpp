@@ -114,6 +114,7 @@ public:
   }
 
   void receive(uint8_t val){
+//    SERIAL.print(val,HEX);
     for(int i=0;i<3;i++){
       if(!frames[i].active){
         if(val==frames[i].header.bytes[frames[i].frame_index]){
@@ -142,7 +143,7 @@ public:
           frames[i].frame_index = 0;
           
           frameMatch();
-          delay(2);
+          delay(5);
           digitalWrite(13,false); // drive disable
         }
       }

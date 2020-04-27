@@ -25,7 +25,7 @@ void setup()
   // SerialUSB.print is used to allow compatability between both the Mega (Serial.print) 
   // and the Zero Native Port (SerialUSB.print), and is defined in FingerLib.h
   SerialUSB.begin(115200);
-  while(!Serial){}
+//  while(!Serial){}
   SerialUSB.println("hand init");
 
 //  pixel.begin();
@@ -33,13 +33,12 @@ void setup()
 
   pinAssignment();
 
-//   // set hand to the open position and wait for it to open
-//   SerialUSB.println("open hand");
-//  openHand();
-//  delay(1500);
-//  SerialUSB.println("close hand");
-//  closeHand();
-//  delay(1500);
+   // set hand to the open position and wait for it to open
+   SerialUSB.println("open hand");
+  openHand();
+  delay(2000);
+  SerialUSB.println("close hand");
+  closeHand();
 
   //====== added additional uart to FPGA ===== 
   Serial.begin(19200);
