@@ -1,5 +1,5 @@
 #define SERIAL SerialUSB
-#define PRINTOUTS
+//#define PRINTOUTS
 
 #pragma pack(1)
 /*
@@ -143,7 +143,7 @@ public:
           frames[i].frame_index = 0;
           
           frameMatch();
-          delay(5);
+          delay(1);
           digitalWrite(13,false); // drive disable
         }
       }
@@ -204,7 +204,7 @@ public:
                 SERIAL.print(msg.values.setpoint2);SERIAL.print("\t");
                 SERIAL.print(msg.values.setpoint3);SERIAL.println();
                 #endif
-
+                commands_received++;
                 break;
               }
               case 2: { // hand_control_mode
@@ -248,7 +248,7 @@ public:
       }
     }
   }
-
+  long int commands_received = 0;
 private:
   uint8_t ID = 134;
   Frame frames[3];

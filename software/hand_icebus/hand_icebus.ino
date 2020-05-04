@@ -50,7 +50,6 @@ void setup()
 }
 
 
-int counter = 0;
 bool toggle = false;
 
 void loop()
@@ -59,8 +58,9 @@ void loop()
       icebus.receive(Serial.read());
   }
 
-  if((counter++)%10000==0){
-    SerialUSB.println(counter);
+  if((icebus.commands_received)%1000==0){
+    SerialUSB.print("hand commands received: ");
+    SerialUSB.println(icebus.commands_received);
   }
 
 }
