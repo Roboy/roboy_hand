@@ -15,7 +15,7 @@
 #define CHESTNUT_BOARD
 
 #define NUM_FINGERS 4
-int handFlag = RIGHT;
+int handFlag = LEFT;
 
 #define MAX_FRAME_LENGTH 28
 #define HEADER_LENGTH 4
@@ -114,7 +114,7 @@ public:
   }
 
   void receive(uint8_t val){
-//    SERIAL.print(val,HEX);
+//    SERIAL.println(val,HEX);
     for(int i=0;i<3;i++){
       if(!frames[i].active){
         if(val==frames[i].header.bytes[frames[i].frame_index]){
